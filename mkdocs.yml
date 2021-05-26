@@ -2,7 +2,9 @@ site_name: Poor Math
 site_url: https://poorMath.github.io/
 site_author: poorMath
 
-
+repo_name: poorMath
+repo_url: https://github.com/Bazoka13/poorMath.github.io
+edit_uri: ""
 theme:
   name: material
   palette:
