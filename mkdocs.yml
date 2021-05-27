@@ -65,7 +65,6 @@ extra_javascript:
 nav:
   - 首页: index.md
   - 比赛记录: 
-    - Try: contest/1.md
     - WA on test 998244353: contest/WA on test 998244353.md
     - 比赛模板: contest/template.md
     
