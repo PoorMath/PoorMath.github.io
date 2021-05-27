@@ -1,7 +1,10 @@
-site_name: Poor Math-Wiki
+site_name: Poor_Math-Wiki
 site_url: https://poorMath.github.io/
-site_author: poorMath
+site_author: OoorMath
 
+repo_name: wiki
+repo_url: https://github.com/PoorMath/wiki
+edit_uri: ""
 
 theme:
   name: material
