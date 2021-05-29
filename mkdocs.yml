@@ -65,7 +65,7 @@ extra_javascript:
 nav:
   - 首页: index.md
   - 比赛记录: 
-    - 比赛模板: contest/template.md
+    - 20210529 SWERC2018: contest/20210529 SWERC2018.md
   - YZW:
     - QWQ: YZW/QWQ.md
   - JLK:
