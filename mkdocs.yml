@@ -65,8 +65,8 @@ extra_javascript:
 nav:
   - 首页: index.md
   - 比赛记录: 
-    - 20210529 SWERC2018: contest/20210529 SWERC2018.md
     - 20210602 Petrozavodsk Winter-2018. ITMO U 1 Contest: contest/20210602 Petrozavodsk Winter-2018. ITMO U 1 Contest.md
+    - 20210529 SWERC2018: contest/20210529 SWERC2018.md
   - YZW:
     - QWQ: YZW/QWQ.md
   - JLK:
