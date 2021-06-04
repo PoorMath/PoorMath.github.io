@@ -22,7 +22,7 @@ $$\begin{aligned}\begin{vmatrix}\lambda I-A\end{vmatrix}&=\begin{vmatrix}\lambda
 
 对于两个 $\deg<k$ 的 $A$ 的多项式，其相乘结果对 $\varphi(A)$ 取模就可以暴力地在 $O(k^2)$ 内完成，那么快速幂计算 $A^n \bmod \varphi(A)$ 时间复杂度为 $O(k^2\log n)$。
 
-若 $A\in(\mathrm{Z}_p)^{k\times k}$，$p$ 为 NTT 质数，那么取模这一步可以利用 NTT 在 $O(k\log k)$ 内完成，时间复杂度为 $O(k\log k\log n)$。
+若 $A\in(\mathbb{Z}_p)^{k\times k}$，$p$ 为 NTT 质数，那么取模这一步可以利用 NTT 在 $O(k\log k)$ 内完成，时间复杂度为 $O(k\log k\log n)$。
 
 若 $A^{n-k}\bmod \varphi(A)=b_0I+b_1A+b_2A^2+\cdots+b_{k-1}A^{k-1}$，可得下式：
 
