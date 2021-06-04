@@ -92,11 +92,30 @@ $n$ 人比赛决出 $1$ 名 winner。
 
 答案对 $2^{64}$ 取余。
 
-$1\leq n\leq 10^18$。
+$1\leq n\leq 10^{18}$。
 
 ### 题解
 
+不难得到所求答案为 $\prod_{i=0}^{\log_2 n} f\left(\lceil{n/2^i}\rceil\right)$，其中 $f(n)=(n-[2|n])!!$。
 
+问题转化为自然溢出下求奇数的双阶乘，因此无需考虑 $2$ 作为因子的情况。
+
+考虑倍增，若求 $n!!$，设小于 $n$ 的最大的 $2$ 的幂次为 $b$，再令 $a=n-b$，则：
+$$\begin{aligned}n!!&=(b-1)!!(b+1)(b+3)\cdots(b+a)\\&=(b-1)!!\sum_{i=0}^{\lceil a/2\rceil}b^i\sum_{1\leq c_1<c_2<\cdots<c_i\leq a\\2 \not\,|\, c_1,\,2 \not\,|\, c_2,\cdots,\,2 \not\,|\, c_i}c_1c_2\cdots c_i\end{aligned}$$
+
+不难发现 $2|b$，因此 $b^{64}\equiv 0\pmod {2^{64}}$，求和上限只需取到 $63$ 即可。
+
+设 $f(a,i)=\sum_{1\leq c_1<c_2<\cdots<c_{\lceil a/2\rceil -i}\leq a\\2 \not\,|\, c_1,\,2 \not\,|\, c_2,\cdots,\,2 \not\,|\, c_{\lceil a/2\rceil -i}}c_1c_2\cdots c_{\lceil a/2\rceil -i}$，$g(a,b,i)=\sum_{a\leq c_1<c_2<\cdots<c_{\lceil (b-a+1)/2\rceil -i}\leq b\\2 \not\,|\, c_1,\,2 \not\,|\, c_2,\cdots,\,2 \not\,|\, c_{\lceil (b-a+1)/2\rceil -i}}c_1c_2\cdots c_{\lceil (b-a+1)/2\rceil -i}$，则 $n!!=f(n,0)$，$f(a,i)=g(1,a,i)$。特殊地，若 ${\lceil (b-a+1)/2\rceil -i}=0$，取 $g(a,b,i)=1$。
+
+类似上式，容易得到：
+
+$$\begin{aligned}f(n,i)&=\sum_{k=0}^if(b-1,i-k)g(b+1,b+a,k)\\&=\sum_{k=0}^if(b-1,i-k)\sum_{j=0}^{\lceil a/2\rceil-k}b^j\binom {k+j}jf(a,k+j)\end{aligned}$$
+
+同样地，求和上限只需取到 $63$ 即可，递归计算并保存所有计算结果即可求得 $n!!$，边界条件 $f(1,0)=f(1,1)=1$。
+
+$n$ 相同的 $f(n,*)$ 可一并计算，由 $f(b-1,*)$ 与 $f(a,*)$ 合并到 $f(n,*)$ 的时间复杂度为 $O(\log^2 n)$。
+
+因此计算 $n!!=f(n,0)$ 的复杂度为 $O(\log^3 n)$，总共需要计算 $\log n$ 个双阶乘，因此总复杂度 $O(\log^4 n)$。
 
 ## **F**
 
