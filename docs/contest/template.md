@@ -6,7 +6,7 @@
 
 ## **A**
 
-**upsolved by **
+**solved/upsolved by **
 
 ### 题意
 
@@ -18,7 +18,7 @@
 
 ## **B**
 
-**upsolved by **
+**solved/upsolved by **
 
 ### 题意
 
@@ -30,7 +30,7 @@
 
 ## **C**
 
-**upsolved by **
+**solved/upsolved by **
 
 ### 题意
 
@@ -42,7 +42,7 @@
 
 ## **D**
 
-**upsolved by **
+**solved/upsolved by **
 
 ### 题意
 
@@ -54,7 +54,7 @@
 
 ## **E**
 
-**upsolved by **
+**solved/upsolved by **
 
 ### 题意
 
@@ -66,7 +66,7 @@
 
 ## **F**
 
-**upsolved by **
+**solved/upsolved by **
 
 ### 题意
 
@@ -78,7 +78,7 @@
 
 ## **G**
 
-**upsolved by **
+**solved/upsolved by **
 
 ### 题意
 
@@ -90,7 +90,7 @@
 
 ## **H**
 
-**upsolved by **
+**solved/upsolved by **
 
 ### 题意
 
@@ -102,7 +102,7 @@
 
 ## **I**
 
-**upsolved by **
+**solved/upsolved by **
 
 ### 题意
 
@@ -114,7 +114,7 @@
 
 ## **J**
 
-**upsolved by **
+**solved/upsolved by **
 
 ### 题意
 
@@ -126,7 +126,7 @@
 
 ## **K**
 
-**upsolved by **
+**solved/upsolved by **
 
 ### 题意
 
@@ -138,7 +138,7 @@
 
 ## **L**
 
-**upsolved by **
+**solved/upsolved by **
 
 ### 题意
 
