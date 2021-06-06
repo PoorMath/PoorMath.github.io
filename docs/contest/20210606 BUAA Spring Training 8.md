@@ -130,27 +130,48 @@ $O(d)$
 
 ## **I**
 
-**solved/upsolved by **
+**solved by Snakes**
 
 ### 题意
 
+圆心位于原点，半径为 $R_1$ 的圆作为目标。一次攻击的落点等概率散布在圆心位于原点，半径为 $R_2$ 的圆内，攻击范围为以落点为圆心，半径为 $r$ 的圆。当目标与攻击范围相交时造成 $a$ 伤害，伤害大于等于 $h$ 时目标摧毁。
 
+求 $n$ 次攻击摧毁目标的概率对 $10^9+7$ 取模的结果。
+
+$1\leq n\leq 5\times 10^6$，$1\leq R_1,R_2,r\leq 10^8$，$1\leq a,h\leq 10^8$。
 
 ### 题解
 
+易见单次攻击造成伤害的概率 $p=\min\left\{1,{(R_1+r)^2\over R_2^2}\right\}$。
 
+至少造成 $t=\left\lceil {a\over h}\right\rceil$ 次伤害可摧毁目标。
+
+答案即为 $\sum_{i=t}^n \binom n i p^i (1-p)^(n-i)$。
+
+时间复杂度 $O(n)$。
 
 ## **J**
 
-**solved/upsolved by **
+**solved by Snakes**
 
 ### 题意
 
+给定长为 $n$ 的非负整数序列 $a_1,\dots,a_n$。有以下两种操作：
 
++ 给定 $l,r,x$，区间 $a_l,\dots,a_r$ 二进制与 $x$；
++ 给定 $l,r$，查询 $\sum_{i=l}^r a_i^2$ 对 $998244353$ 取模的结果。
+
+操作共 $q$ 次。
+
+$1\leq n\leq 3\times 10^5$，$0\leq a_i<2^{24}$，$1\leq q\leq 3\times 10^5$。
 
 ### 题解
 
+注意到每个数至多会被与 $24$ 次。
 
+线段树维护每个区间的或和以及平方和，修改时只修改与 $x$ 后有变化的区间，查询时直接查询即可。
+
+可以分析得到时间复杂度为 $O(n(\log n+\log a))$
 
 ## **K**
 
@@ -184,11 +205,35 @@ $O(200\times 2^nn^2)$
 
 ## **记录**
 
-
+2min: JLK AC A
+8min: TYB AC E
+18min: YZW TLE I (-1)
+22min: YZW AC I
+33min: JLK AC C
+47min: YZW RE J (-1)
+56min: YZW AC J
+1h40min: TYB WA K (-1)
+1h48min: TYB AC K
+1h52min: JLK AC B
+2h06min: TYB AC F
+2h30min: JLK AC L
+3h41min: JLK WA G (-1)
+3h51min: JLK WA G (-2)
+4h22min: JLK AC G
 
 ## **总结**
 
+I 不要以为评测机看起来快就写 $\log$，追求好写 + 小常数 / 复杂度。
+
+K 哈希可做就不必考虑 Manachar 等其他算法了。
+
+B 常用的如 $\sqrt n$ 一类的性质需要熟练运用 QAQ
+
+D/H 注重分析性质，把握解题方向，练习精准的 observation（？
+
 ## **Dirt**
 
-
-
+G (-2)
+I (-1)
+J (-1)
+K (-1)
