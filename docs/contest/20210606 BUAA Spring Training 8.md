@@ -218,19 +218,33 @@ $O(200\times 2^nn^2)$
 ## **记录**
 
 2min: JLK AC A
+
 8min: TYB AC E
+
 18min: YZW TLE I (-1)
+
 22min: YZW AC I
+
 33min: JLK AC C
+
 47min: YZW RE J (-1)
+
 56min: YZW AC J
+
 1h40min: TYB WA K (-1)
+
 1h48min: TYB AC K
+
 1h52min: JLK AC B
+
 2h06min: TYB AC F
+
 2h30min: JLK AC L
+
 3h41min: JLK WA G (-1)
+
 3h51min: JLK WA G (-2)
+
 4h22min: JLK AC G
 
 ## **总结**
