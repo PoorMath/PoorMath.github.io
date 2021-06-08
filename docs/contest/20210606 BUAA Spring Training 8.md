@@ -60,7 +60,7 @@ $O(n^2)$
 
 ## **D**
 
-**solved/upsolved by **
+**solved/upsolved by**
 
 ### 题意
 
@@ -122,7 +122,7 @@ $O(d)$
 
 ## **H**
 
-**solved/upsolved by **
+**solved/upsolved by**
 
 ### 题意
 
@@ -179,7 +179,7 @@ $1\leq n\leq 3\times 10^5$，$0\leq a_i<2^{24}$，$1\leq q\leq 3\times 10^5$。
 
 ## **K**
 
-**solved by TYB **
+**solved by TYB**
 
 ### 题意
 
