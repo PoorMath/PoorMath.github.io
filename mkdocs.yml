@@ -1,4 +1,4 @@
-site_name: Poor_Math-Wiki
+esite_name: Poor_Math-Wiki
 site_url: https://poormath.github.io/wiki/
 site_author: PoorMath
 
@@ -66,6 +66,7 @@ nav:
   - 首页: index.md
   - 比赛记录: 
     - 假赛集锦: contest/bad_sample.md
+    - 20210802 牛客多校第六场: contest/20210802 牛客多校第六场.md
     - 20210731 牛客多校第五场: contest/20210731 牛客多校第五场.md
     - 20210729 Supplementary Training 02: contest/20210729 Supplementary Training 02.md
     - 20210726 牛客多校第四场: contest/20210726 牛客多校第四场.md
