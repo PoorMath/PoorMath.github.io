@@ -6,7 +6,7 @@
 
 
 
-### Lagrange 插值
+#### Lagrange 插值
 
 由于 $\varphi_A(\lambda)$ 为 $n$ 次多项式，我们只需要 $n+1$ 个点的点值即可 Lagrange 插值求得 $\varphi_A(\lambda)$。
 
@@ -18,7 +18,7 @@
 
 
 
-### Upper Hessenberg 矩阵
+#### Upper Hessenberg 矩阵
 
 > ——写成英文就可以规避分词错误了。
 
