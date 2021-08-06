@@ -81,6 +81,7 @@ nav:
     - 20210529 SWERC2018: contest/20210529 SWERC2018.md
   - YZW:
     - 特征多项式: YZW/characteristic-polynomial.md
+    - 常系数线性齐次递推: YZW/linear-recurrence.md
   - JLK:
     - HDU 6960: JLK/HDU 6960.md
   - TYB:
