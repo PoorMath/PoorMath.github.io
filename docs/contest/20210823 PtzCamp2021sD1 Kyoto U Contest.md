@@ -1,4 +1,4 @@
-# [Day 1: Kyoto U Contest](https://official.contest.yandex.com/ptz-summer-2021/contest/28720/enter/)
+# [Ptz Camp 2021s Day 1: Kyoto U Contest](https://official.contest.yandex.com/ptz-summer-2021/contest/28720/enter/)
 
 | 排名  | 当场过题数 | 至今过题数 | 总题数 |
 | ----- | ---------- | ---------- | ------ |
