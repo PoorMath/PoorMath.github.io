@@ -2,19 +2,29 @@
 
 | 排名  | 当场过题数 | 至今过题数 | 总题数 |
 | ----- | ---------- | ---------- | ------ |
-| 33/99 | 5          | 7          | 11     |
+| 33/99 | 5          | 8          | 11     |
 
 ## **A**
 
-**upsolved by **
+**upsolved by TYB**
 
 ### 题意
 
+给出$k,a[0\dots3^k-1],b[0\dots3^k-1]$，求$c_x=\sum_{mex3(i,j)=x}a_i\times b_j$，其中$mex3(i,j)$为将$i,j$转成三进制后，逐位做$mex$得到的数。
 
+$k\le12$
 
 ### 题解
 
+考虑如何求$c[0\times3^x+i],c[1\times3^x+i],c[2\times3^x+i]$。
 
+$c[0\times3^x+i]=\sum_{mex3(j,k)=i}(a[1\times 3^x+j]+a[2\times 3^x+j])(b[1\times 3^x+k]+b[2\times 3^x+k])$
+
+$c[1\times3^x+i]=\sum_{mex3(j,k)=i}(a[0\times 3^x+j]+a[2\times 3^x+j])(b[0\times 3^x+k]+b[2\times 3^x+k])-a[2\times 3^x+j]\times b[2\times 3^x+j]$
+
+$c[2\times3^x+i]=\sum_{mex3(j,k)=i}(a[0\times 3^x+j]+a[1\times 3^x+j]+a[2\times 3^x+j])(b[0\times 3^x+j]+b[1\times 3^x+k]+b[2\times 3^x+k])-c[0\times3^x+i]-c[1\times3^x+i]$
+
+这样，一个$3^k$的卷积结果可以通过$4$个$3^{k-1}$的卷积结果得到，也就是每一层要分下去四层，复杂度$\mathcal{O}(4^k)$。
 
 ## **B**
 
