@@ -18,11 +18,19 @@ $k\le12$
 
 考虑如何求$c[0\times3^x+i],c[1\times3^x+i],c[2\times3^x+i]$。
 
-$c[0\times3^x+i]=\sum_{mex3(j,k)=i}(a[1\times 3^x+j]+a[2\times 3^x+j])(b[1\times 3^x+k]+b[2\times 3^x+k])$
+$c[0\times3^x+i]=$
 
-$c[1\times3^x+i]=\sum_{mex3(j,k)=i}(a[0\times 3^x+j]+a[2\times 3^x+j])(b[0\times 3^x+k]+b[2\times 3^x+k])-a[2\times 3^x+j]\times b[2\times 3^x+j]$
+$\sum_{mex3(j,k)=i}(a[1\times 3^x+j]+a[2\times 3^x+j])(b[1\times 3^x+k]+b[2\times 3^x+k])$
 
-$c[2\times3^x+i]=\sum_{mex3(j,k)=i}(a[0\times 3^x+j]+a[1\times 3^x+j]+a[2\times 3^x+j])(b[0\times 3^x+j]+b[1\times 3^x+k]+b[2\times 3^x+k])-c[0\times3^x+i]-c[1\times3^x+i]$
+$c[1\times3^x+i]=$
+
+$\sum_{mex3(j,k)=i}(a[0\times 3^x+j]+a[2\times 3^x+j])(b[0\times 3^x+k]+b[2\times 3^x+k])-a[2\times 3^x+j]\times b[2\times 3^x+j]$
+
+$c[2\times3^x+i]=$
+
+$\sum_{mex3(j,k)=i}(a[0\times 3^x+j]+a[1\times 3^x+j]+a[2\times 3^x+j])(b[0\times 3^x+j]+b[1\times 3^x+k]+b[2\times 3^x+k])$
+
+$-c[0\times3^x+i]-c[1\times3^x+i]$
 
 这样，一个$3^k$的卷积结果可以通过$4$个$3^{k-1}$的卷积结果得到，也就是每一层要分下去四层，复杂度$\mathcal{O}(4^k)$。
 
