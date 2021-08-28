@@ -66,6 +66,7 @@ nav:
   - 首页: index.md
   - 比赛记录: 
     - 假赛集锦: contest/bad_sample.md
+    - 20210828 2021CCPC网络赛: contest/20210828 2021CCPC网络赛.md
     - 20210825 PtzCamp2021sD3 IQ test by kefaa2, antontrygubO_o, and gepardo: contest/20210825 PtzCamp2021sD3 IQ test by kefaa2, antontrygubO_o, and gepardo.md
     - 20210824 PtzCamp2021sD2 The American Contest: contest/20210824 PtzCamp2021sD2 The American Contest.md
     - 20210823 PtzCamp2021sD1 Kyoto U Contest: contest/20210823 PtzCamp2021sD1 Kyoto U Contest.md
