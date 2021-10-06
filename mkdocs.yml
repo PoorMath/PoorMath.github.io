@@ -66,6 +66,7 @@ nav:
   - 首页: index.md
   - 比赛记录: 
     - 假赛集锦: contest/bad_sample.md
+    - 20211005 2020 ICPC Asia East Continent Final: contest/20211005 2020 ICPC Asia East Continent Final.md
     - 20211003 2013-2014 Winter Petrozavodsk Camp, Andrew Stankevich Contest 45: contest/20211003 2013-2014 Winter Petrozavodsk Camp, Andrew Stankevich Contest 45.md
     - 20210912 2021 BUAA Autumn Training 1: contest/20210912 2021 BUAA Autumn Training 1.md
     - 20210830 PtzCamp2021sD7 MIPT Contest: contest/20210830 PtzCamp2021sD7 MIPT Contest.md
