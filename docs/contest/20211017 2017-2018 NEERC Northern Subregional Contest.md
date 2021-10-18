@@ -159,11 +159,13 @@ $n,m\le100,1\le k\le10^9$​
 
 显然使得连通块最多的方案形如：
 $$
-01010 \\\\
-11111 \\\\
-01010 \\\\
-11111 \\\\
-01010 \\\\
+\begin{aligned}
+01010 \\
+11111 \\
+01010 \\
+11111 \\
+01010 \\
+\end{aligned}
 $$
 即$\lceil\frac{n}{2}\rceil\lceil\frac{m}{2}\rceil$个连通块，所以只需判断是否存在$1\le a\le \lceil\frac{n}{2}\rceil,1\le b\le \lceil\frac{m}{2}\rceil$且$ab=k$即可。​
 
