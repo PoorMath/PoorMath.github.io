@@ -78,11 +78,42 @@ $O(n\log n+a_i \log a_i)$
 
 ### 题意
 
+给出 $m$ 行仅由 `for` 与 `lag` 构成的代码，求 `lag` 语句时间复杂度 $C\cdot n^k$。
 
+代码满足：仅是 `for` 的嵌套，并且 `lag` 在最内层且只出现一次。`for x in range(l, r)` 语句满足 `x` 是除 `n` 外的小写英文字母，`l` 与 `r` 是外层变量，另外 `l` 可以为 `1`，`r` 可以为 `n`。
+
+$m\leq 21$。
 
 ### 题解
 
+首先将变量（包括 $1$ 和 $n$）看作点。
 
+一条 `for x in range(l, r):` 语句给出了限制 $l\leq x\leq r$，我们连有向边 $l\rightarrow x\rightarrow r$ 表示偏序关系。
+
+容易发现，连边得到的有向图若存在环，则能执行 `lag` 语句当且仅当环上的所有点取值相等，因此可以将环缩点，并保留所有连边。
+
+注意到所求的 $k$ 即为缩点后得到的 DAG 中除 $1$ 与 $n$ 外的自由变量个数。
+
+接下来考察 $C$ 如何计算。观察样例，对于下述程序：
+
+```
+for i in range(1, n):
+    for j in range(1, i):
+        for k in range(j, n):
+            lag
+```
+
+一个朴素的想法是利用离散求和维护多元多项式，提取 $n^k$ 项的系数，但是过程中会出现很多对答案无贡献的项。
+
+考虑将变量取值范围均除以 $n$，此时有：
+
+$$\begin{aligned}C=\lim_{n\to\infty}\sum_{i=1}^n{1\over n}\sum_{j=1}^i{1\over n}\sum_{k=j}^n{1\over n}=\int_0^1\int_0^i\int_j^1\mathrm{d}i\,\mathrm{d}j\,\mathrm{d}k={1\over 3}\end{aligned}$$
+
+考虑积分意义，实际上积分求出的是自由变量 $i,j,k$ 在 $[0,1]$ 上任意取值时，满足 $0\leq i\leq 1,0\leq j\leq i,j\leq k\leq 1$ 的概率。
+
+类似 [Serval and Bonus Problem](https://codeforces.com/problemset/problem/1153/F)，我们只需考虑自由变量构成的排列满足上述条件的概率，容易发现，这个概率为缩点后只考虑除 $1$ 与 $n$ 外的自由变量构成的 DAG 的合法拓扑序数量除以 $k!$。例如对于样例，合法拓扑序数量为 $2$，因此 $C=2/3!=2/6=1/3$。
+
+状压 DP 求出合法拓扑序数量即可，时间复杂度 $O(k2^k)$。
 
 ## **G**
 
