@@ -66,11 +66,12 @@ nav:
   - 首页: index.md
   - 比赛记录: 
     - 注意事项: contest/bad_sample.md
-    - 20211121 CCPC威海站: contest/20211121 CCPC威海站.md
+    - 20211121 2020ICPC南京: contest/20211128 2020ICPC南京.md
+    - 20211121 2021CCPC威海: contest/20211121 2021CCPC威海.md
     - 20211031 2020-2021 NERC: contest/20211031 2020-2021 NERC.md
     - 20211017 2017-2018 NEERC Northern Subregional Contest: contest/20211017 2017-2018 NEERC Northern Subregional Contest.md
-    - 20211007 2020 ICPC Asia Macau Regional Contest: contest/20211007 2020 ICPC Asia Macau Regional Contest.md
-    - 20211005 2020 ICPC Asia East Continent Final: contest/20211005 2020 ICPC Asia East Continent Final.md
+    - 20211007 2020ICPC澳门: contest/20211007 2020ICPC澳门.md
+    - 20211005 2020ICPC ECFinal: contest/20211005 2020ICPC ECFinal.md
     - 20211003 2013-2014 Winter Petrozavodsk Camp, Andrew Stankevich Contest 45: contest/20211003 2013-2014 Winter Petrozavodsk Camp, Andrew Stankevich Contest 45.md
     - 20210912 2021 BUAA Autumn Training 1: contest/20210912 2021 BUAA Autumn Training 1.md
     - 20210830 PtzCamp2021sD7 MIPT Contest: contest/20210830 PtzCamp2021sD7 MIPT Contest.md
@@ -96,7 +97,7 @@ nav:
     - 20210724 牛客多校第三场: contest/20210724 牛客多校第三场.md
     - 20210722 Supplementary Training 01: contest/20210722 Supplementary Training 01.md
     - 20210719 牛客多校第二场: contest/20210719 牛客多校第二场.md
-    - 20210718 2020 ICPC Shenyang: contest/20210718 2020 ICPC Shenyang.md
+    - 20210718 2020ICPC沈阳: contest/20210718 2020ICPC沈阳.md
     - 20210606 BUAA Spring Training 8: contest/20210606 BUAA Spring Training 8.md
     - 20210602 Petrozavodsk Winter-2018. ITMO U 1 Contest: contest/20210602 Petrozavodsk Winter-2018. ITMO U 1 Contest.md
     - 20210529 SWERC2018: contest/20210529 SWERC2018.md
