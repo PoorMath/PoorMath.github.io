@@ -66,6 +66,7 @@ nav:
   - 首页: index.md
   - 比赛记录: 
     - 注意事项: contest/bad_sample.md
+    - 20211211 ByteCamp网络预选赛: contest/20211211 ByteCamp网络预选赛.md
     - 20211204 2021ICPC南京: contest/20211204 2021ICPC南京.md
     - 20211128 2020ICPC南京: contest/20211128 2020ICPC南京.md
     - 20211121 2021CCPC威海: contest/20211121 2021CCPC威海.md
