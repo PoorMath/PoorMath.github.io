@@ -137,7 +137,7 @@ LL S(LL n,int m)
 
 ##### update：补充递推的写法（算出在所有$\lfloor\frac{n}{i}\rfloor$处函数前缀和）
 
-设$S(x,j)=\sum_{i=2}^x[minp(i)\ge prime_j\or i\in Prime]f(i)$​（注意定义略有不同）。
+设$S(x,j)=\sum_{i=2}^x[minp(i)\ge prime_j\ or\ i\in Prime]f(i)$​（注意定义略有不同）。
 
 显然$S(x,tot+1)$的值就是我们第一步筛出来的$g(x)$（只包含了质数）。
 
