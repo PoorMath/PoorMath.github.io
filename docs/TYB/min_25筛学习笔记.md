@@ -137,7 +137,7 @@ LL S(LL n,int m)
 
 ##### update：补充递推的写法（算出在所有$\lfloor\frac{n}{i}\rfloor$处函数前缀和）
 
-设$S(x,j)=\sum_{i=2}^x[minp(i)\ge prime_j\ or\ i\in Prime]f(i)$​（注意定义略有不同）。
+设$S(x,j)=\sum_{i=2}^x[minp(i)\ge prime_j 或者 i\in Prime]f(i)$​（注意定义略有不同）。
 
 显然$S(x,tot+1)$的值就是我们第一步筛出来的$g(x)$（只包含了质数）。
 
@@ -155,9 +155,9 @@ for(int j=tot;j;j--)
         while(t*prime[j]<=w[i])
         {
             up(sphi[i],(LL)phi*(sphi[gid(w[i]/t)]-sprime[j]+j)%P);//至少两个不同质因子合数
-            phi=(ll)phi*prime[j]%P;
+            phi=(LL)phi*prime[j]%P;
             up(sphi[i],phi);//质数的幂
-            t*=(ll)prime[j];
+            t*=(LL)prime[j];
         }
     }
 }
