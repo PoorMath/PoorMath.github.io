@@ -75,7 +75,7 @@ void init()
 	for(int j=1;j<=tot;j++)
 	for(int i=1;i<=lw;i++)
     {
-        if(prime[j]*prime[j]>w[i])break;
+        if((LL)prime[j]*prime[j]>w[i])break;
         int id=gid(w[i]/prime[j]);g[i]=g[i]-g[id]+j-1;
 	}
 }
@@ -89,7 +89,7 @@ void init()
 
 3、最后求$[1,x]$​内质数个数，就是$g[gid(x)]$​。
 
-这一部分的复杂度是$O(\frac{n^{\frac{3}{4}}}{\log n})$，注意如果筛的函数就是完全积性函数那么只要这一步就足够了。
+这一部分的复杂度是$O(\frac{n^{\frac{3}{4}}}{\log n})$，注意如果筛的函数就是完全积性函数（如质数个数、质数和）那么只要这一步就足够了。
 
 ## 第二步
 
@@ -101,9 +101,9 @@ void init()
 
 质数的部分比较简单，即$g(x,j)-\sum_{i=1}^{j-1}f(prime_i)$​。
 
-合数部分，考虑枚举最小质因子及其次数，可以得到$\sum_{k=j}^{prime_k^2\le x}\sum_{e=1}^{prime_k^{e+1}\le x}S(x/prime_k^e,j+1)\times f(prime_k^e)+f(prime_k^{e+1})$​，正确性显然。
+合数部分，考虑枚举最小质因子及其次数，可以得到$\sum_{k=j}^{prime_k^2\le x}\sum_{e=1}^{prime_k^{e+1}\le x}[S(x/prime_k^e,j+1)\times f(prime_k^e)+f(prime_k^{e+1})]$​​，正确性显然。
 
-合起来就是$S(x,j)=g(x,j)-\sum_{i=1}^{j-1}f(prime_i)+\sum_{k=j}^{prime_k^2\le x}\sum_{e=1}^{prime_k^{e+1}\le x}S(x/prime_k^e,j+1)\times f(prime_k^e)+f(prime_k^{e+1})$。
+合起来就是$S(x,j)=g(x,j)-\sum_{i=1}^{j-1}f(prime_i)+\sum_{k=j}^{prime_k^2\le x}\sum_{e=1}^{prime_k^{e+1}\le x}[S(x/prime_k^e,j+1)\times f(prime_k^e)+f(prime_k^{e+1})]$​。
 
 ##### 第二步具体实现
 
@@ -133,7 +133,35 @@ LL S(LL n,int m)
 
 这一部分复杂度也是$O(\frac{n^{\frac{3}{4}}}{\log n})$​。
 
-但如果计算出每个$x=\lfloor\frac{n}{i}\rfloor$处的值，直接用递推写，复杂度貌似是$O(n^{1-\epsilon})$的，亚线性复杂度（这个不太了解，可能有误）。
+但如果计算出每个$x=\lfloor\frac{n}{i}\rfloor$处的值，直接用递推写，复杂度貌似是$O(n^{1-\epsilon})$​的，亚线性复杂度（这个不太了解，可能有误）。
+
+##### update：补充递推的写法（算出在所有$\lfloor\frac{n}{i}\rfloor$处函数前缀和）
+
+设$S(x,j)=\sum_{i=2}^x[minp(i)\ge prime_j\or i\in Prime]f(i)$​（注意定义略有不同）。
+
+显然$S(x,tot+1)$的值就是我们第一步筛出来的$g(x)$（只包含了质数）。
+
+考虑$S(x,j)$​比$S(x,j+1)$​多了哪些数的贡献，类似地，我们将其分为两类，一类是至少有两个不同的质因子，且最小质因子为$prime_j$​，一类是$prime_j^k$​，其中$k\ge2$​。所以式子为$S(x,j)=S(x,j+1)+\sum_{e=1}^{prime_j^{e+1}\le x}\{[S(x/{prime_j^e},j+1)-\sum_{k=1}^{j-1}f(prime_k)]\times f(prime_j^e)+f(prime_j^{e+1})\}$。
+
+##### 具体实现（以筛$\phi$为例）
+
+```C++
+for(int j=tot;j;j--)
+{
+    for(int i=1;i<=lw;i++)
+    {
+        if((LL)prime[j]*prime[j]>w[i])break;
+        int phi=prime[j]-1;LL t=prime[j];
+        while(t*prime[j]<=w[i])
+        {
+            up(sphi[i],(LL)phi*(sphi[gid(w[i]/t)]-sprime[j]+j)%P);//至少两个不同质因子合数
+            phi=(ll)phi*prime[j]%P;
+            up(sphi[i],phi);//质数的幂
+            t*=(ll)prime[j];
+        }
+    }
+}
+```
 
 ## 小结
 
