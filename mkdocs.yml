@@ -66,6 +66,7 @@ nav:
   - 首页: index.md
   - 比赛记录: 
     - 注意事项: contest/bad_sample.md
+    - 20220120 NWERC2019: contest/20220120 NWERC2019.md
     - 20220118 2018 ICPC Asia Jakarta Regional Contest: contest/20220118 2018 ICPC Asia Jakarta Regional Contest.md
     - 20211211 ByteCamp网络预选赛: contest/20211211 ByteCamp网络预选赛.md
     - 20211204 2021ICPC南京: contest/20211204 2021ICPC南京.md
