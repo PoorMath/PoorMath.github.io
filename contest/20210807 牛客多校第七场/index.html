@@ -1,0 +1,1818 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="PoorMath">
+      
+      
+        <link rel="canonical" href="https://poormath.github.io/wiki/contest/20210807%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E4%B8%83%E5%9C%BA/">
+      
+      <link rel="icon" href="https://cdn.jsdelivr.net/npm/oicdn@0.0.1/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.8">
+    
+    
+      
+        <title>20210807 牛客多校第七场 - Poor_Math-Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6e60f8b8.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ffffff">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,400i,700%7CFira+Mono&display=fallback">
+        <style>:root{--md-text-font:"Fira Sans";--md-code-font:"Fira Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="pink">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#20217" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Poor_Math-Wiki" class="md-header__button md-logo" aria-label="Poor_Math-Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Poor_Math-Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              20210807 牛客多校第七场
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/PoorMath/wiki" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wiki
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      首页
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../bad_sample/" class="md-tabs__link md-tabs__link--active">
+        比赛记录
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../YZW/characteristic-polynomial/" class="md-tabs__link">
+        YZW
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../JLK/HDU%206960/" class="md-tabs__link">
+        JLK
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../TYB/prufer%E5%BA%8F%E5%88%97%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="md-tabs__link">
+        TYB
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../others/QWQ/" class="md-tabs__link">
+        杂项
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Poor_Math-Wiki" class="md-nav__button md-logo" aria-label="Poor_Math-Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+
+    </a>
+    Poor_Math-Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/PoorMath/wiki" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        首页
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          比赛记录
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="比赛记录" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          比赛记录
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bad_sample/" class="md-nav__link">
+        注意事项
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20220125%202021ICPC%E6%B2%88%E9%98%B3/" class="md-nav__link">
+        20220125 2021ICPC沈阳
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20220120%20NWERC2019/" class="md-nav__link">
+        20220120 NWERC2019
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20220118%202018%20ICPC%20Asia%20Jakarta%20Regional%20Contest/" class="md-nav__link">
+        20220118 2018 ICPC Asia Jakarta Regional Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20211211%20ByteCamp%E7%BD%91%E7%BB%9C%E9%A2%84%E9%80%89%E8%B5%9B/" class="md-nav__link">
+        20211211 ByteCamp网络预选赛
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20211204%202021ICPC%E5%8D%97%E4%BA%AC/" class="md-nav__link">
+        20211204 2021ICPC南京
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20211128%202020ICPC%E5%8D%97%E4%BA%AC/" class="md-nav__link">
+        20211128 2020ICPC南京
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20211121%202021CCPC%E5%A8%81%E6%B5%B7/" class="md-nav__link">
+        20211121 2021CCPC威海
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20211031%202020-2021%20NERC/" class="md-nav__link">
+        20211031 2020-2021 NERC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20211017%202017-2018%20NEERC%20Northern%20Subregional%20Contest/" class="md-nav__link">
+        20211017 2017-2018 NEERC Northern Subregional Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20211007%202020ICPC%E6%BE%B3%E9%97%A8/" class="md-nav__link">
+        20211007 2020ICPC澳门
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20211005%202020ICPC%20ECFinal/" class="md-nav__link">
+        20211005 2020ICPC ECFinal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20211003%202013-2014%20Winter%20Petrozavodsk%20Camp%2C%20Andrew%20Stankevich%20Contest%2045/" class="md-nav__link">
+        20211003 2013-2014 Winter Petrozavodsk Camp, Andrew Stankevich Contest 45
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210912%202021%20BUAA%20Autumn%20Training%201/" class="md-nav__link">
+        20210912 2021 BUAA Autumn Training 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210830%20PtzCamp2021sD7%20MIPT%20Contest/" class="md-nav__link">
+        20210830 PtzCamp2021sD7 MIPT Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210829%20Replacement%20Contest%201%20Lviv%20NU%20Contest/" class="md-nav__link">
+        20210829 Replacement Contest 1 Lviv NU Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210828%202021CCPC%E7%BD%91%E7%BB%9C%E8%B5%9B/" class="md-nav__link">
+        20210828 2021CCPC网络赛
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210825%20PtzCamp2021sD3%20IQ%20test%20by%20kefaa2%2C%20antontrygubO_o%2C%20and%20gepardo/" class="md-nav__link">
+        20210825 PtzCamp2021sD3 IQ test by kefaa2, antontrygubO_o, and gepardo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210824%20PtzCamp2021sD2%20The%20American%20Contest/" class="md-nav__link">
+        20210824 PtzCamp2021sD2 The American Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210823%20PtzCamp2021sD1%20Kyoto%20U%20Contest/" class="md-nav__link">
+        20210823 PtzCamp2021sD1 Kyoto U Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210821%20Petrozavodsk%20Winter-2018.%20Carnegie%20Mellon%20U%20Contest/" class="md-nav__link">
+        20210821 Petrozavodsk Winter-2018. Carnegie Mellon U Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210818%20Petrozavodsk%20Winter-2019.%20Oleksandr%20Kulkov%20Contest%201/" class="md-nav__link">
+        20210818 Petrozavodsk Winter-2019. Oleksandr Kulkov Contest 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210816%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E5%8D%81%E5%9C%BA/" class="md-nav__link">
+        20210816 牛客多校第十场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210814%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E4%B9%9D%E5%9C%BA/" class="md-nav__link">
+        20210814 牛客多校第九场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210812%20Supplementary%20Training%2004/" class="md-nav__link">
+        20210812 Supplementary Training 04
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210810%20Petrozavodsk%20Summer-2013.%20Comenius%20U%20Selection%20by%20Michal%20Forisek/" class="md-nav__link">
+        20210810 Petrozavodsk Summer-2013. Comenius U Selection by Michal Forisek
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210809%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E5%85%AB%E5%9C%BA/" class="md-nav__link">
+        20210809 牛客多校第八场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          20210807 牛客多校第七场
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        20210807 牛客多校第七场
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    A
+  </a>
+  
+    <nav class="md-nav" aria-label="A">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    B
+  </a>
+  
+    <nav class="md-nav" aria-label="B">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    C
+  </a>
+  
+    <nav class="md-nav" aria-label="C">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    D
+  </a>
+  
+    <nav class="md-nav" aria-label="D">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    E
+  </a>
+  
+    <nav class="md-nav" aria-label="E">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f" class="md-nav__link">
+    F
+  </a>
+  
+    <nav class="md-nav" aria-label="F">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g" class="md-nav__link">
+    G
+  </a>
+  
+    <nav class="md-nav" aria-label="G">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h" class="md-nav__link">
+    H
+  </a>
+  
+    <nav class="md-nav" aria-label="H">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i" class="md-nav__link">
+    I
+  </a>
+  
+    <nav class="md-nav" aria-label="I">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#j" class="md-nav__link">
+    J
+  </a>
+  
+    <nav class="md-nav" aria-label="J">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k" class="md-nav__link">
+    K
+  </a>
+  
+    <nav class="md-nav" aria-label="K">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    记录
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    总结
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dirt" class="md-nav__link">
+    Dirt
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210805%20Supplementary%20Training%2003/" class="md-nav__link">
+        20210805 Supplementary Training 03
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210804%20NEERC2014/" class="md-nav__link">
+        20210804 NEERC2014
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210802%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E5%85%AD%E5%9C%BA/" class="md-nav__link">
+        20210802 牛客多校第六场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210731%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E4%BA%94%E5%9C%BA/" class="md-nav__link">
+        20210731 牛客多校第五场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210729%20Supplementary%20Training%2002/" class="md-nav__link">
+        20210729 Supplementary Training 02
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210726%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E5%9B%9B%E5%9C%BA/" class="md-nav__link">
+        20210726 牛客多校第四场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210724%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E4%B8%89%E5%9C%BA/" class="md-nav__link">
+        20210724 牛客多校第三场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210722%20Supplementary%20Training%2001/" class="md-nav__link">
+        20210722 Supplementary Training 01
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210719%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E4%BA%8C%E5%9C%BA/" class="md-nav__link">
+        20210719 牛客多校第二场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210718%202020ICPC%E6%B2%88%E9%98%B3/" class="md-nav__link">
+        20210718 2020ICPC沈阳
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210606%20BUAA%20Spring%20Training%208/" class="md-nav__link">
+        20210606 BUAA Spring Training 8
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210602%20Petrozavodsk%20Winter-2018.%20ITMO%20U%201%20Contest/" class="md-nav__link">
+        20210602 Petrozavodsk Winter-2018. ITMO U 1 Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210529%20SWERC2018/" class="md-nav__link">
+        20210529 SWERC2018
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          YZW
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="YZW" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          YZW
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../YZW/characteristic-polynomial/" class="md-nav__link">
+        特征多项式
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../YZW/linear-recurrence/" class="md-nav__link">
+        常系数线性齐次递推
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          JLK
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="JLK" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          JLK
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JLK/HDU%206960/" class="md-nav__link">
+        HDU 6960
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          TYB
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="TYB" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          TYB
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TYB/prufer%E5%BA%8F%E5%88%97%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+        prufer序列学习笔记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TYB/%E9%AB%98%E6%95%88%E5%A4%84%E7%90%86%E6%97%A0%E4%BF%AE%E6%94%B9%E5%8C%BA%E9%97%B4%E8%AF%A2%E9%97%AE%E7%9A%84%E6%96%B9%E6%B3%95/" class="md-nav__link">
+        高效处理无修改区间询问的方法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TYB/min_25%E7%AD%9B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+        min_25筛学习笔记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TYB/%E5%8C%BA%E9%97%B4%E6%9C%AC%E8%B4%A8%E4%B8%8D%E5%90%8C%E5%AD%90%E4%B8%B2%E6%95%B0/" class="md-nav__link">
+        区间本质不同子串数
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TYB/CF1580F/" class="md-nav__link">
+        CF1580F
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          杂项
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="杂项" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          杂项
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/QWQ/" class="md-nav__link">
+        QWQ
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<h1 id="20217"><a href="https://ac.nowcoder.com/acm/contest/11258">2021牛客暑期多校训练营7</a><a class="headerlink" href="#20217" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th>排名</th>
+<th>当场过题数</th>
+<th>至今过题数</th>
+<th>总题数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21/1294（校内3/19）</td>
+<td>4</td>
+<td>9</td>
+<td>11</td>
+</tr>
+</tbody>
+</table>
+<h2 id="a"><strong>A</strong><a class="headerlink" href="#a" title="Permanent link">&para;</a></h2>
+<p><strong>upsolved by TYB</strong></p>
+<h3 id="_1">题意<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>给一张<span class="arithmatex">\(n\)</span>​个点的完全图，边有边权，若一个边集能将<span class="arithmatex">\(n\)</span>个点连通，则为合法边集，求所有合法边集边权乘积与边集大小乘积之和。</p>
+<p><span class="arithmatex">\(n\le20\)</span>，对<span class="arithmatex">\(998244353\)</span>取模</p>
+<h3 id="_2">题解<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>先考虑不要求乘上边数怎么做。令<span class="arithmatex">\(f_S\)</span>表示边的端点都在<span class="arithmatex">\(S\)</span>中时，使<span class="arithmatex">\(S\)</span>连通的边集权值和，<span class="arithmatex">\(g_S\)</span>表示边的端点都在<span class="arithmatex">\(S\)</span>中的边集权值和。则<span class="arithmatex">\(G=\sum_{i&gt;0}\frac{F^i}{i!}=\exp(F)-1\)</span>，这里的乘法为不相交集合并，即<span class="arithmatex">\((f\times g)_S=\sum_{L\subseteq S}\sum_{R\subseteq S}[L\bigcup R=S][L\bigcap R=\emptyset]f_Lg_R\)</span>​。<span class="arithmatex">\(G\)</span>很好求，<span class="arithmatex">\(F=\ln(G+1)\)</span>，只要做一个集合幂级数<span class="arithmatex">\(\ln\)</span>即可求出<span class="arithmatex">\(F\)</span>，复杂度<span class="arithmatex">\(O(n^22^n)\)</span>。在本题中，运用生成函数的思想，不妨认为<span class="arithmatex">\(f_S\)</span>和<span class="arithmatex">\(g_S\)</span>​都是多项式<span class="arithmatex">\(\sum_ia_ix^i\)</span>，<span class="arithmatex">\(a_i\)</span>表示边集权值和，<span class="arithmatex">\(i\)</span>表示边数，代入上式依旧成立。那么最后的答案为<span class="arithmatex">\(\sum_ia_i\times i=f'_{2^n-1}(1)\)</span>。所以实际上我们只需要维护<span class="arithmatex">\((f(1),f'(1))\)</span>这个二元组即可。</p>
+<p>求集合幂级数<span class="arithmatex">\(\ln\)</span>的方法有点抽象，在这里简述一下：第一步：对<span class="arithmatex">\(G+1\)</span>按照每个状态<span class="arithmatex">\(S\)</span>中<span class="arithmatex">\(1\)</span>的个数求得到其占位多项式。第二步：对该占位多项式做<span class="arithmatex">\(FMT\)</span>（即或卷积）。第三步：对集合幂级数的每个状态<span class="arithmatex">\(S\)</span>（即一个形式幂级数）求出其<span class="arithmatex">\(\ln\)</span>。第四步：对该占位多项式做<span class="arithmatex">\(IFMT\)</span>。</p>
+<p>第三步的具体方法如下：</p>
+<p><span class="arithmatex">\(F=\ln(G+1)\)</span></p>
+<p><span class="arithmatex">\(F'(G+1)=G'\)</span></p>
+<p><span class="arithmatex">\(F'_i=G'_i-\sum_{j=1}G_jF'_{i-j}\)</span></p>
+<h2 id="b"><strong>B</strong><a class="headerlink" href="#b" title="Permanent link">&para;</a></h2>
+<p><strong>upsolved by TYB</strong></p>
+<h3 id="_3">题意<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>给出两个序列<span class="arithmatex">\(\{a_n\},\{b_n\}\)</span>，其中<span class="arithmatex">\(b\)</span>是<span class="arithmatex">\(01\)</span>序列，<span class="arithmatex">\(q\)</span>次操作，一是将<span class="arithmatex">\(a_x\)</span>改成<span class="arithmatex">\(y\)</span>；二是将<span class="arithmatex">\(b_{l\dots r}\)</span>取反，即<span class="arithmatex">\(01\)</span>​互换；三是询问<span class="arithmatex">\(l,r\)</span>​，维护一个位置集合<span class="arithmatex">\(S\)</span>，初始时<span class="arithmatex">\(S=\{l\}\)</span>，设<span class="arithmatex">\(S\)</span>中的最大值为<span class="arithmatex">\(i\)</span>，每次找到一个使<span class="arithmatex">\(a_j\ge a_i\)</span>的最小的<span class="arithmatex">\(j\)</span>，若不存在这样的<span class="arithmatex">\(j\)</span>或者<span class="arithmatex">\(j&gt;r\)</span>则结束流程，否则将<span class="arithmatex">\(j\)</span>加入<span class="arithmatex">\(S\)</span>并继续该流程，设<span class="arithmatex">\(S\)</span>中第<span class="arithmatex">\(i\)</span>小的数为<span class="arithmatex">\(p_i\)</span>​，最后求<span class="arithmatex">\(\sum_{i=1}^{|S|-1}b_{p_i}\bigoplus b_{p_{i+1}}\)</span>。</p>
+<p><span class="arithmatex">\(q,n\le2\times10^5\)</span></p>
+<h3 id="_4">题解<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>原来觉得<span class="arithmatex">\(\log\)</span>​数据结构不可做，原来是个经典的问题。先考虑只求<span class="arithmatex">\(|S|\)</span>​怎么做。定义<span class="arithmatex">\(ans(x,mx)\)</span>​为当前最大值为<span class="arithmatex">\(mx\)</span>​，进入<span class="arithmatex">\(x\)</span>​这个区间后能再选多少个数，比如<span class="arithmatex">\(mx=3\)</span>​，在<span class="arithmatex">\([2,4,1,5]\)</span>​这个区间能再选<span class="arithmatex">\(\{4,5\}\)</span>​两个数，<span class="arithmatex">\(mx=1\)</span>​则能再选三个数。线段树每个节点<span class="arithmatex">\(x\)</span>​维护区间最大值<span class="arithmatex">\(mx[x]\)</span>​、<span class="arithmatex">\(ans(x,-\inf)\)</span>​、<span class="arithmatex">\(ans(rc,mx[lc])\)</span>​​，设函数<span class="arithmatex">\(calc(x,v)\)</span>​返回<span class="arithmatex">\(ans(x,v)\)</span>​，那么每个询问都可以拆成若干个<span class="arithmatex">\(calc(x,v)\)</span>​，分两种情况：若<span class="arithmatex">\(v\le mx[lc]\)</span>，则无论如何在离开<span class="arithmatex">\([l,mid]\)</span>这段区间时，最大值一定为<span class="arithmatex">\(mx[lc]\)</span>，所以这种情况的答案为<span class="arithmatex">\(calc(lc,v)+ans(rc,mx[lc])\)</span>；否则，相当于直接跳到<span class="arithmatex">\([mid+1,r]\)</span>这段区间，答案为<span class="arithmatex">\(calc(rc,v)\)</span>。可以发现，无论哪种情况，都只会递归到其中一边，所以<span class="arithmatex">\(calc\)</span>的复杂度是<span class="arithmatex">\(O(\log n)\)</span>的；单点修改时，每次update也需要用到<span class="arithmatex">\(calc\)</span>，共<span class="arithmatex">\(\log n\)</span>次，复杂度<span class="arithmatex">\(O(\log^2n)\)</span>；询问时拆成<span class="arithmatex">\(\log n\)</span>个<span class="arithmatex">\(calc\)</span>，复杂度也是<span class="arithmatex">\(O(\log^2n)\)</span>。对于本题，只要将维护的信息略作修改即可，重要的是这一种套路。</p>
+<h2 id="c"><strong>C</strong><a class="headerlink" href="#c" title="Permanent link">&para;</a></h2>
+<p><strong>upsolved by Suspicious String</strong></p>
+<h3 id="_5">题意<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(q\)</span> 组询问，每组询问给出 <span class="arithmatex">\(a,b\)</span>，每次可以令 <span class="arithmatex">\(a\leftarrow a+\text{popcount}(a)\)</span>，求不小于 <span class="arithmatex">\(b\)</span> 的能得到的最小的 <span class="arithmatex">\(a\)</span>，输出 <span class="arithmatex">\(\sum_{i=1}^q ia_i\bmod 2^{64}\)</span>。</p>
+<p><span class="arithmatex">\(1\leq q\leq 10^7\)</span>，<span class="arithmatex">\(1\leq a\leq b&lt;2^{64}\)</span></p>
+<h3 id="_6">题解<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>面对垃圾卡常题失去语言能力，可参考官方题解脑补，脑壳特疼，待填。</p>
+<p>UPD: 填了。</p>
+<p>首先注意到单次步长不超过 <span class="arithmatex">\(64\)</span>，因此对于满足 <span class="arithmatex">\(64x\geq a\)</span> 的任意 <span class="arithmatex">\(x\)</span>，都存在 <span class="arithmatex">\(y&lt;64\)</span>，使得 <span class="arithmatex">\(a\)</span> 经过 <span class="arithmatex">\(64x+y\)</span>。对于一个 <span class="arithmatex">\(a\)</span>，均能拆为 <span class="arithmatex">\(64x+y\)</span> 的形式，方便起见，我们称 <span class="arithmatex">\(x\)</span> 为<strong>高位值</strong>，称 <span class="arithmatex">\(y\)</span> 为<strong>低位值</strong>。显然地，二进制下高位值共 <span class="arithmatex">\(58\)</span> 位，低位值共 <span class="arithmatex">\(6\)</span> 位。</p>
+<p>考虑 <span class="arithmatex">\(x\)</span> 的各个二进制位，若能从某个 <span class="arithmatex">\(a\)</span> 快速地转移到某位进位的位置，就可以处理较为方便地回答询问。</p>
+<p>可以预处理 <span class="arithmatex">\(u_{i,j,k}\)</span> 表示高位值 <span class="arithmatex">\(x\)</span> 末尾共有 <span class="arithmatex">\(i\)</span> 位是 <span class="arithmatex">\(0\)</span>，高位值除去末尾 <span class="arithmatex">\(i\)</span> 位的 <span class="arithmatex">\(\text{popcount}\)</span> 为 <span class="arithmatex">\(j\)</span>，低位值为 <span class="arithmatex">\(y\)</span> 时，依次步进到 <span class="arithmatex">\(x\)</span> 的末尾第 <span class="arithmatex">\(i+1\)</span> 位发生进位时的低位值。也即：<span class="arithmatex">\(a\)</span> 此时为 <span class="arithmatex">\(64x+y\)</span>，二进制为 <span class="arithmatex">\(\underbrace{\mathtt{xx...xx}}_{\text{popcount}=j}\underbrace{\mathtt{00...00}}_{i\;\text{digits}}\underbrace{\mathtt{yyyyyy}}_{\text{value}=k}\)</span>，<span class="arithmatex">\(u_{i,j,k}\)</span> 即为步进过程中 <span class="arithmatex">\(\mathtt{xx...xx}\)</span> 段增加 <span class="arithmatex">\(1\)</span> 时最小的低位值，并且容易发现此时 <span class="arithmatex">\(\mathtt{00...00}\)</span> 段仍为 <span class="arithmatex">\(\mathtt{00...00}\)</span>。特殊地，当 <span class="arithmatex">\(i=0\)</span> 时表示不存在 <span class="arithmatex">\(\mathtt{00...00}\)</span> 段。</p>
+<p>利用 <span class="arithmatex">\(u_{i,j,k}\)</span> 的信息，可以从低位到高位依次将 <span class="arithmatex">\(a\)</span> 的高位值快速进位到与 <span class="arithmatex">\(b\)</span> 的高位值在二进制下具有相同前缀，并且除去前缀后 <span class="arithmatex">\(a\)</span> 的高位值剩余位均为 <span class="arithmatex">\(0\)</span>，再从高位到低位依次将 <span class="arithmatex">\(a\)</span> 的高位值的前缀补齐到与 <span class="arithmatex">\(b\)</span> 的高位值相同。高位值相同时仅需考虑 <span class="arithmatex">\(a\)</span> 与 <span class="arithmatex">\(b\)</span> 的低位值，暴力即可。回答单次询问的复杂度为 <span class="arithmatex">\(O(64)\)</span>，并不能通过本题。</p>
+<p>采用分块的思想，将高位值中连续 <span class="arithmatex">\(B\)</span> 位作为一个块预处理，代码实现中选取了 <span class="arithmatex">\(B=7\)</span>，因此真实值 <span class="arithmatex">\(a\)</span> 二进制下被划分为了以下形式：</p>
+<div class="arithmatex">\[\mathtt{...}\underbrace{\mathtt{ccccccc}}_{\text{block}\;2}\underbrace{\mathtt{bbbbbbb}}_{\text{block}\;1}\underbrace{\mathtt{aaaaaaa}}_{\text{block}\;0}\mathtt{yyyyyy}\]</div>
+<p>我们约定块的编号由低位向高位以 <span class="arithmatex">\(0\)</span> 起始依次编号，因此共有 <span class="arithmatex">\(\left\lceil {58\over B}\right\rceil\)</span> 个块。块内低位向高位以 <span class="arithmatex">\(1\)</span> 起始依次编号。</p>
+<p>类似 <span class="arithmatex">\(u_{i,j,k}\)</span>，我们定义以下辅助 <span class="arithmatex">\(a\)</span> 快速步进的预处理值：</p>
+<ul>
+<li><span class="arithmatex">\(f_{i,j,k}\)</span> 表示 <span class="arithmatex">\(a\)</span> 的高位值 <span class="arithmatex">\(x\)</span> 的 <span class="arithmatex">\(\text{popcount}\)</span> 为 <span class="arithmatex">\(i\)</span>，低位值为 <span class="arithmatex">\(j\)</span> 时，步进到高位值不变但低位值不小于 <span class="arithmatex">\(k\)</span> 时的最小步进增量。</li>
+<li><span class="arithmatex">\(g_{i,j,k,l,m}\)</span> 表示 <span class="arithmatex">\(a\)</span> 的高位值 <span class="arithmatex">\(x\)</span> 在第 <span class="arithmatex">\(0\)</span> 块至第 <span class="arithmatex">\(i-1\)</span> 块均为 <span class="arithmatex">\(0\)</span>，高位值在第 <span class="arithmatex">\(i\)</span> 块内末尾 <span class="arithmatex">\(l\)</span> 位值为 <span class="arithmatex">\(m\)</span>，高位值的第 <span class="arithmatex">\(i\)</span> 块内除去末尾 <span class="arithmatex">\(l\)</span> 位的剩余 <span class="arithmatex">\(B-l\)</span> 位与第 <span class="arithmatex">\(i+1\)</span> 块至第 <span class="arithmatex">\(\left\lceil {58\over B}\right\rceil\)</span> 块的 <span class="arithmatex">\(\text{popcount}\)</span> 之和为 <span class="arithmatex">\(j\)</span>，低位值为 <span class="arithmatex">\(k\)</span> 时，步进到高位值第 <span class="arithmatex">\(i\)</span> 块内末尾第 <span class="arithmatex">\(l+1\)</span> 位发生进位时的最小的低位值。</li>
+<li><span class="arithmatex">\(h_{i,j,k,l,m}\)</span> 表示 <span class="arithmatex">\(a\)</span> 的高位值 <span class="arithmatex">\(x\)</span> 在第 <span class="arithmatex">\(0\)</span> 块至第 <span class="arithmatex">\(i-1\)</span> 块以及第 <span class="arithmatex">\(i\)</span> 块内末尾 <span class="arithmatex">\(l\)</span> 位均为 <span class="arithmatex">\(0\)</span>，高位值的第 <span class="arithmatex">\(i\)</span> 块内除去末尾 <span class="arithmatex">\(l\)</span> 位的剩余 <span class="arithmatex">\(B-l\)</span> 位与第 <span class="arithmatex">\(i+1\)</span> 块至第 <span class="arithmatex">\(\left\lceil {58\over B}\right\rceil\)</span> 块的 <span class="arithmatex">\(\text{popcount}\)</span> 之和为 <span class="arithmatex">\(j\)</span>，低位值为 <span class="arithmatex">\(k\)</span> 时，步进到高位值其余位不变但第 <span class="arithmatex">\(i\)</span> 块内末尾 <span class="arithmatex">\(l\)</span> 位值为 <span class="arithmatex">\(m\)</span> 时的最小的低位值。</li>
+</ul>
+<p>由 <span class="arithmatex">\(g,h\)</span> 的定义可以得到 <span class="arithmatex">\(0\leq l&lt;B\)</span>，<span class="arithmatex">\(0\leq m&lt;2^l\)</span>。</p>
+<p>具象地，对 <span class="arithmatex">\(g,h\)</span> 作出如下说明便于理解：</p>
+<div class="arithmatex">\[g_{i,j,k,l,m}:\rlap{\underbrace{\phantom{\mathtt{...x..x}}}_{\text{popcount}=j}}\mathtt{...}\;\overbrace{\mathtt{x..x}\;\underbrace{\mathtt{m..m}}_{\begin{matrix}l\;\text{digits}\\\text{value}=m\end{matrix}}}^{\text{block}\;i}\;\mathtt{00..00}\;\underbrace{\mathtt{yyyyyy}}_{\text{value}=k} \longrightarrow \mathtt{...}\;\overbrace{\mathtt{X..X}\;\underbrace{\mathtt{0..0}}_{l\;\text{digits}}}^{\text{block}\;i}\;\mathtt{00..00}\;\underbrace{\mathtt{YYYYYY}}_{\text{value}=g_{i,j,k,l,m}}\]</div>
+<p>其中 <span class="arithmatex">\((\mathtt{...X..X})_2=(\mathtt{...x..x})_2+1\)</span>，<span class="arithmatex">\(\mathtt{YYYYYY}\)</span> 即为 <span class="arithmatex">\(g_{i,j,k,l,m}\)</span>，即满足条件的最小的低位值。</p>
+<div class="arithmatex">\[h_{i,j,k,l,m}:\rlap{\underbrace{\phantom{\mathtt{...x..x}}}_{\text{popcount}=j}}\mathtt{...}\;\overbrace{\mathtt{x..x}\;\underbrace{\mathtt{0..0}}_{l\;\text{digits}}}^{\text{block}\;i}\;\mathtt{00..00}\;\underbrace{\mathtt{yyyyyy}}_{\text{value}=k} \longrightarrow \mathtt{...}\;\overbrace{\mathtt{x..x}\;\underbrace{\mathtt{m..m}}_{\begin{matrix}l\;\text{digits}\\\text{value}=m\end{matrix}}}^{\text{block}\;i}\;\mathtt{00..00}\;\underbrace{\mathtt{YYYYYY}}_{\text{value}=h_{i,j,k,l,m}}\]</div>
+<p>其中 <span class="arithmatex">\(\mathtt{YYYYYY}\)</span> 即为 <span class="arithmatex">\(h_{i,j,k,l,m}\)</span>，即满足条件的最小的低位值。</p>
+<p>根据定义容易得到 <span class="arithmatex">\(f_{i,j,k}\)</span> 的递推关系：</p>
+<div class="arithmatex">\[f_{i,j,k}=\begin{cases}0&amp;,j\geq k\\i+\text{popcount}(j)&amp;,j+i+\text{popcount}(j)\geq k\\f_{i,j+i+\text{popcount}(j),k}+i+\text{popcount}(j)&amp;,j+i+\text{popcount}(j)&lt;k\end{cases}\]</div>
+<p>计算 <span class="arithmatex">\(g_{i,j,k,l,m}\)</span> 时需要使用 <span class="arithmatex">\(f_{i,j,k}\)</span> 的值：</p>
+<div class="arithmatex">\[g_{i,j,k,l,m}=\begin{cases}(k+f_{j,k,64})\bmod 64&amp;,l=0\wedge i=0\\g_{i-1,j+1,g_{i-1,j,k,B-1,0},B-1,0}&amp;,l=0\wedge i\neq 0\\g_{i,j+1,k,l-1,m\,\bmod\,2^{l-1}}&amp;,l&gt;0\wedge m\geq 2^{l-1}\\g_{i,j+1,g_{i,j,k,l-1,m\,\bmod\,2^{l-1}},l-1,0}&amp;,l&gt;0\wedge m&lt;2^{l-1}\end{cases}\]</div>
+<p>而计算 <span class="arithmatex">\(h_{i,j,k,l,m}\)</span> 时需要使用 <span class="arithmatex">\(g_{i,j,k,l,m}\)</span> 的值：</p>
+<div class="arithmatex">\[h_{i,j,k,l,m}=\begin{cases}k&amp;,l=0\\h_{i,j+1,g_{i,j,k,l-1,0},l-1,m\,\bmod\,2^{l-1}}&amp;,l&gt;0\wedge m\geq 2^{l-1}\\h_{i,j,k,l-1,m\,\bmod\,2^{l-1}}&amp;,l&gt;0\wedge m&lt;2^{l-1}\end{cases}\]</div>
+<p>分类讨论即可得到上述关系式。预处理时需要注意 <span class="arithmatex">\(g,h\)</span> 不同的递推顺序。</p>
+<p>容易发现，状态数总共为 <span class="arithmatex">\(\left\lceil{58\over B}\right\rceil\cdot 58\cdot64\cdot B\cdot 2^{B-1}\)</span>，因此预处理的总时间复杂度为 <span class="arithmatex">\(O(58^2\cdot64\cdot 2^{B-1})\)</span>。</p>
+<p>回答一个询问时，将 <span class="arithmatex">\(a\)</span> 的高位值与低位值分离处理。</p>
+<p>先从低位向高位依次处理每个块，并维护低位值。设当前为第 <span class="arithmatex">\(i\)</span> 块，块内当前 <span class="arithmatex">\(a\)</span> 所有二进制位的值为 <span class="arithmatex">\(m\)</span>，有以下两种情况：</p>
+<ul>
+<li>若除当前块外不存在更高的位使得当前 <span class="arithmatex">\(a\)</span> 的高位值与 <span class="arithmatex">\(b\)</span> 的高位值存在差异，则找到块内最高的差异位，设其为块内末尾第 <span class="arithmatex">\(l\)</span> 位。由 <span class="arithmatex">\(a&lt;b\)</span> 可保证这一位上 <span class="arithmatex">\(a\)</span> 为 <span class="arithmatex">\(0\)</span> 且 <span class="arithmatex">\(b\)</span> 为 <span class="arithmatex">\(1\)</span>，因此只需要将 <span class="arithmatex">\(a\)</span> 快速步进到 <span class="arithmatex">\(g_{i,*,k,l-1,m\,\bmod\,2^{l-1}}\)</span> 对应位置即可将 <span class="arithmatex">\(a\)</span> 的差异位变为 <span class="arithmatex">\(1\)</span>，并且高位值中低于差异位的所有位均为 <span class="arithmatex">\(0\)</span>，此时 <span class="arithmatex">\(a\)</span> 的高位值与 <span class="arithmatex">\(b\)</span> 的高位值具有相同的前缀。<span class="arithmatex">\(*\)</span> 处的 <span class="arithmatex">\(\text{popcount}\)</span> 具体值根据定义即可计算。</li>
+<li>若不然，则存在仍未访问的块，块中当前 <span class="arithmatex">\(a\)</span> 的高位值与 <span class="arithmatex">\(b\)</span> 的高位值存在差异。因此为了后续的快速步进，需要将当前块均步进为 <span class="arithmatex">\(0\)</span>。具体地，若 <span class="arithmatex">\(m\geq 2^{B-1}\)</span> 则将 <span class="arithmatex">\(a\)</span> 快速步进到 <span class="arithmatex">\(g_{i,*,k,B-1,m\,\bmod\,2^{B-1}}\)</span>，若 <span class="arithmatex">\(m&lt;2^{B-1}\)</span> 则将 <span class="arithmatex">\(a\)</span> 快速步进到 <span class="arithmatex">\(g_{i,*+1,g_{i,*,k,B-1,m},B-1,0}\)</span>，维护 <span class="arithmatex">\(a\)</span> 的高位值与低位值即可。</li>
+</ul>
+<p>此时 <span class="arithmatex">\(a\)</span> 的高位值与 <span class="arithmatex">\(b\)</span> 的高位值已有相同的前缀，并且除去前缀后 <span class="arithmatex">\(a\)</span> 的高位值剩余位均为 <span class="arithmatex">\(0\)</span>，这为后续的补齐步进提供了便利。</p>
+<p>对于差异位所在的块，设其为第 <span class="arithmatex">\(i\)</span> 块，块内 <span class="arithmatex">\(b\)</span> 所有二进制位的值为 <span class="arithmatex">\(m\)</span>，若 <span class="arithmatex">\(a\)</span> 的高位值与 <span class="arithmatex">\(b\)</span> 的高位值仍有差异，则该块仍需补齐。设差异位为块内末尾第 <span class="arithmatex">\(l\)</span> 位，只需将 <span class="arithmatex">\(a\)</span> 快速步进到 <span class="arithmatex">\(h_{i,*,k,l-1,m\,\bmod\,2^{l-1}}\)</span> 即可。</p>
+<p>再自差异位所在块起，由高位向低位依次处理剩余每个块。设当前为第 <span class="arithmatex">\(i\)</span> 块，块内 <span class="arithmatex">\(b\)</span> 所有二进制位的值为 <span class="arithmatex">\(m\)</span>。此时块内只需将当前 <span class="arithmatex">\(a\)</span> 补齐至 <span class="arithmatex">\(b\)</span> 即可。具体地，若 <span class="arithmatex">\(m\geq 2^{B-1}\)</span> 则将 <span class="arithmatex">\(a\)</span> 快速步进到 <span class="arithmatex">\(h_{i,*+1,g_{i,*,k,B-1,0},B-1,m\,\bmod\,2^{B-1}}\)</span>，若 <span class="arithmatex">\(m&lt;2^{B-1}\)</span> 则将 <span class="arithmatex">\(a\)</span> 快速步进到 <span class="arithmatex">\(h_{i,*,k,B-1,m}\)</span>，维护 <span class="arithmatex">\(a\)</span> 的高位值与低位值即可。</p>
+<p>现在 <span class="arithmatex">\(a\)</span> 和 <span class="arithmatex">\(b\)</span> 的高位值 <span class="arithmatex">\(x\)</span> 均相同，只需考虑低位值。设当前 <span class="arithmatex">\(a\)</span> 低位值为 <span class="arithmatex">\(y\)</span>，<span class="arithmatex">\(b\)</span> 低位值为 <span class="arithmatex">\(y'\)</span>，简单地令 <span class="arithmatex">\(a\leftarrow a+f_{\text{popcount}(x),y,y'}\)</span> 即可得到最终答案。</p>
+<p>单次询问时间复杂度 <span class="arithmatex">\(O(\left\lceil{58\over B}\right\rceil)\)</span>。</p>
+<p>降低常数小技巧：</p>
+<ul>
+<li><span class="arithmatex">\(g,h\)</span> 使用 <code>char</code> 类型存储。</li>
+<li>将数组中较小维向前调整可以加速访问高维数组。</li>
+</ul>
+<p>或许可以定义 <span class="arithmatex">\(l=B\)</span> 时的 <span class="arithmatex">\(g,h\)</span> 方便运算？反正 AC 了，不管了。</p>
+<h2 id="d"><strong>D</strong><a class="headerlink" href="#d" title="Permanent link">&para;</a></h2>
+<p><strong>upsolved by </strong></p>
+<h3 id="_7">题意<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h3 id="_8">题解<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<h2 id="e"><strong>E</strong><a class="headerlink" href="#e" title="Permanent link">&para;</a></h2>
+<p><strong>upsolved by TYB</strong></p>
+<h3 id="_9">题意<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>取石子游戏，<span class="arithmatex">\(n\)</span>堆石子<span class="arithmatex">\(m\)</span>个数，每次能从一堆取石子，每次取的石子数<span class="arithmatex">\(x\)</span>满足<span class="arithmatex">\(\mu(x)=1\)</span>或<span class="arithmatex">\(x\)</span>为给定的<span class="arithmatex">\(m\)</span>个数之一，给出每堆石子的取值范围<span class="arithmatex">\([l_i,r_i]\)</span>，求所有<span class="arithmatex">\(\Pi_{i=1}^n(r_i-l_i+1)\)</span>种情况中，先手获胜的有多少种。</p>
+<p><span class="arithmatex">\(n\le10^6,m\le5,l_i\le r_i\le10^5\)</span></p>
+<h3 id="_10">题解<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>本题的求解分为两部分，一是求<span class="arithmatex">\(sg\)</span>函数，二是求方案数。</p>
+<p>对于第一部分，注意到<span class="arithmatex">\(m\)</span>​很小，可以将<span class="arithmatex">\(m=0\)</span>时的表打出来，由于<span class="arithmatex">\(\mu(x)=1\)</span>的数并不算太多，这个<span class="arithmatex">\(sg\)</span>值会比较小，这种情况下好像是不超过<span class="arithmatex">\(70\)</span>的。据出题人模拟退火一天跑出来的结果，<span class="arithmatex">\(sg\)</span>值不超过<span class="arithmatex">\(230\)</span>。这样我们可以开<span class="arithmatex">\(230\)</span>个bitset，第<span class="arithmatex">\(i\)</span>个bitset的第<span class="arithmatex">\(j\)</span>​​个位置表示<span class="arithmatex">\(j\)</span>能到达的状态中是否有<span class="arithmatex">\(sg\)</span>值为<span class="arithmatex">\(i\)</span>的，用来加速求<span class="arithmatex">\(sg\)</span>​值的过程。设值域为<span class="arithmatex">\(V\)</span>，本部分复杂度为<span class="arithmatex">\(\mathcal{O}(\frac{V^2}{w}+230V)\)</span>。</p>
+<p>对于第二部分，显然可以暴力FWT，显然跑不过去，考虑如何优化。在FWT的过程中，每个位置对FWT后得到的数组贡献是固定的，且不同位置的贡献可以直接相加，所以可以用一个前缀和<span class="arithmatex">\(sum_{i,j}\)</span>表示前<span class="arithmatex">\(i\)</span>个<span class="arithmatex">\(sg\)</span>值对<span class="arithmatex">\(j\)</span>​这个位置的贡献，然后对于每堆石子我们就可以<span class="arithmatex">\(\mathcal{O}(256)\)</span>得其FWT后的数组。那么这个贡献怎么算呢？考虑异或FWT是如何构造变换的，摘录oi-wiki部分资料如下：</p>
+<blockquote>
+<p>异或的卷积是基于如下原理：</p>
+<p>若我们令<span class="arithmatex">\(i\&amp;j\)</span>中<span class="arithmatex">\(1\)</span>数量的奇偶性为<span class="arithmatex">\(i\)</span>与<span class="arithmatex">\(j\)</span>的奇偶性，那么<span class="arithmatex">\(i\)</span>与<span class="arithmatex">\(k\)</span>的奇偶性异或<span class="arithmatex">\(j\)</span>与<span class="arithmatex">\(k\)</span>的奇偶性等于<span class="arithmatex">\(i\ xor\ j\)</span>与<span class="arithmatex">\(k\)</span>的奇偶性。</p>
+<p>对于<span class="arithmatex">\(FWT[A]\)</span>的运算其实也很好得到。</p>
+<p>公式如下：<span class="arithmatex">\(A_i=\sum_{C_1}A_j-\sum_{C_2}A_j\)</span></p>
+<p>(<span class="arithmatex">\(C_1\)</span>表示<span class="arithmatex">\(i\&amp;j\)</span>奇偶性为<span class="arithmatex">\(0\)</span>，<span class="arithmatex">\(C_2\)</span>表示<span class="arithmatex">\(i\&amp;j\)</span>的奇偶性为<span class="arithmatex">\(1\)</span>)</p>
+</blockquote>
+<p>利用该公式即可计算每个位置的贡献，这一部分的复杂度为<span class="arithmatex">\(\mathcal{O}(256V+256n)\)</span>。</p>
+<h2 id="f"><strong>F</strong><a class="headerlink" href="#f" title="Permanent link">&para;</a></h2>
+<p><strong>solved by JLK</strong></p>
+<h3 id="_11">题意<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>给定两棵以1为根的树。找到最大的点集，使得在第一棵树上，点集联通，并且对于任意两个点，一个是另一个的祖先。而同时在第二棵树上，任意两个点不是祖先关系。输出最大点集大小。</p>
+<p><span class="arithmatex">\(1 \le n \le 3\times 10^5\)</span></p>
+<h3 id="_12">题解<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>实际上就是在第一棵树的从根开始的一条链上选一个连续区间的点。考虑怎样会冲突，就是两个点在第二棵树的子树有交集，也就是在第二棵树上子树dfs序有交集。</p>
+<p>利用主席树，可以在dfs第一棵树的同时找到和每个点最近的一个冲突祖先。就是以第二棵树的dfs序为下标，第一棵树上的深度为权值，每次区间取max和区间求max。得到这个之后，符合条件的区间一定是，区间里所有点的深度最大冲突点小于区间的最小深度。这可以用倍增来处理。</p>
+<p><span class="arithmatex">\(O(nlogn)\)</span></p>
+<h2 id="g"><strong>G</strong><a class="headerlink" href="#g" title="Permanent link">&para;</a></h2>
+<p><strong>upsolved by </strong></p>
+<h3 id="_13">题意<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<h3 id="_14">题解<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<h2 id="h"><strong>H</strong><a class="headerlink" href="#h" title="Permanent link">&para;</a></h2>
+<p><strong>solved by TYB</strong></p>
+<h3 id="_15">题意<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p>签到。</p>
+<h3 id="_16">题解<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<p>略。</p>
+<h2 id="i"><strong>I</strong><a class="headerlink" href="#i" title="Permanent link">&para;</a></h2>
+<p><strong>solved by YZW</strong></p>
+<h3 id="_17">题意<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p>签到。</p>
+<h3 id="_18">题解<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<p>略。</p>
+<h2 id="j"><strong>J</strong><a class="headerlink" href="#j" title="Permanent link">&para;</a></h2>
+<p><strong>upsolved by JLK</strong></p>
+<h3 id="_19">题意<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<p>给定有向图，问如下形式的假Floyd算法可以跑出多少正确的点对距离。</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">n</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">n</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">n</span><span class="w"></span>
+<span class="w">      </span><span class="n">dis</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">min</span><span class="p">(</span><span class="n">dis</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">],</span><span class="w"> </span><span class="n">dis</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">dis</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">])</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
+<p><span class="arithmatex">\(n \le 2000, m \le 5000,0 \lt w \le 10^4\)</span></p>
+<h3 id="_20">题解<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<p>首先肯定要用<span class="arithmatex">\(n\)</span>次Dij求出所有点对的正确距离。</p>
+<p>考虑过程中怎样才会转移到一个对的距离。</p>
+<p>如果某条边就是最短路，那么肯定是对的。</p>
+<p>否则，对于<span class="arithmatex">\((i,j)\)</span>​，要找到一个<span class="arithmatex">\(k\)</span>​，使得<span class="arithmatex">\(i\to k,k\to j\)</span>​的距离都是对的，并且<span class="arithmatex">\(k\)</span>​有可能在<span class="arithmatex">\(i\to j\)</span>​的最短路上。</p>
+<p>前者可以维护两个bitset，表示从某个点开始或结束，有哪些点的距离是对的。后者就要考虑相对关系。可以在枚举<span class="arithmatex">\(i\)</span>​的时候，按照从<span class="arithmatex">\(i\)</span>​​开始的正确距离排序，然后从小到大枚举，假设当前点为<span class="arithmatex">\(x\)</span>​。如果<span class="arithmatex">\(x\)</span>​加上<span class="arithmatex">\((x,y)\)</span>​的边可以转移到<span class="arithmatex">\(y\)</span>​的正确距离，那么就说明<span class="arithmatex">\(i\to x\)</span>​最短路上经过的点也有可能会在<span class="arithmatex">\(i\to y\)</span>上，同样用bitset维护，每次或一下即可。</p>
+<p>处理出后者的bitset，在按照假算法的顺序枚举<span class="arithmatex">\((i,j)\)</span>，依次判断，不断维护前者的bitset即可。</p>
+<p><span class="arithmatex">\(O(nm\log n+\frac{n^2m}{64})\)</span></p>
+<p>实际上还有一种复杂度更优秀并且可以处理<span class="arithmatex">\(w=0\)</span>的方法，但是太抽象了没看懂。留坑待填。</p>
+<h2 id="k"><strong>K</strong><a class="headerlink" href="#k" title="Permanent link">&para;</a></h2>
+<p><strong>solved by TYB</strong></p>
+<h3 id="_21">题意<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<p>给一个序列<span class="arithmatex">\(\{a_n\}\)</span>，<span class="arithmatex">\(q\)</span>次询问，每次给出<span class="arithmatex">\(l,r,k\)</span>，求<span class="arithmatex">\(a_{l\dots r}\)</span>的数在模<span class="arithmatex">\(k\)</span>意义下，每次可以选择一个连续区间<span class="arithmatex">\(+1\)</span>或<span class="arithmatex">\(-1\)</span>，将全部数变为<span class="arithmatex">\(0\)</span>的最小次数。</p>
+<p><span class="arithmatex">\(n\le2\times 10^5,q\le10^5,k\le2^{30},a_i\in[0,k)\)</span></p>
+<h3 id="_22">题解<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<p>考虑单次询问怎么做。首先将区间里的数差分（<span class="arithmatex">\(a_l\)</span>不变），那么区间操作可以转化为对两个或一个任意位置的操作，在模<span class="arithmatex">\(k\)</span>意义下转正后排序，最优策略一定是选择前面连续的一段都减到<span class="arithmatex">\(0\)</span>，后面连续的一段都加到<span class="arithmatex">\(k\)</span>，枚举分界点，设有<span class="arithmatex">\(x\)</span>个数加到<span class="arithmatex">\(k\)</span>，则答案为前面一段的和与<span class="arithmatex">\(xk\)</span>减后面一段的和的最大值，设差分后转正的数之和为<span class="arithmatex">\(S\)</span>，则也可以写成<span class="arithmatex">\(\max(xk-\)</span>前<span class="arithmatex">\(x\)</span>大数之和<span class="arithmatex">\(,S-\)</span>前<span class="arithmatex">\(x\)</span>大数之和<span class="arithmatex">\()\)</span>。注意到前者随<span class="arithmatex">\(x\)</span>的增大单调增大，后者单调减小，则这个东西的最小值在两者最接近的时候取到，即<span class="arithmatex">\(x\)</span>的最优取值只可能是<span class="arithmatex">\(\lfloor\frac{S}{k}\rfloor\)</span>和<span class="arithmatex">\(\lfloor\frac{S}{k}\rfloor+1\)</span>，那么现在解决的就是一个区间前<span class="arithmatex">\(x\)</span>大数之和的问题，由于负数还需要加上<span class="arithmatex">\(k\)</span>，所以需要二分第<span class="arithmatex">\(x\)</span>大数的值，再用主席树判断。复杂度<span class="arithmatex">\(O(n\log k+q\log^2k)\)</span>。</p>
+<h2 id="_23"><strong>记录</strong><a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
+<p>开局签HI。然后看其他题，都没有太可做的。（F题意读错了）</p>
+<p>后来纠正了F题意，JLK冲了一发<span class="arithmatex">\(O(nlog^2n)\)</span>​的写法，T了(1:31)。</p>
+<p>又换了<span class="arithmatex">\(O(nlogn)\)</span>​写法，WA1后AC(2:17)。期间TYB和YZW讨论K。</p>
+<p>TYB写K，WA1后AC(3:47)。</p>
+<p>B想到一个<span class="arithmatex">\(O(n\sqrt n log n)\)</span>​做法，怕T没敢写。选择冲J，最后有一个树套树写法，没时间了，也怕T。</p>
+<h2 id="_24"><strong>总结</strong><a class="headerlink" href="#_24" title="Permanent link">&para;</a></h2>
+<p>JLK：题目有点怪，也没什么办法。</p>
+<h2 id="dirt"><strong>Dirt</strong><a class="headerlink" href="#dirt" title="Permanent link">&para;</a></h2>
+<p>F(-2)</p>
+<p>K(-1)</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="页脚">
+      
+        
+        <a href="../20210809%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E5%85%AB%E5%9C%BA/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 20210809 牛客多校第八场" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              20210809 牛客多校第八场
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../20210805%20Supplementary%20Training%2003/" class="md-footer__link md-footer__link--next" aria-label="下一页: 20210805 Supplementary Training 03" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              20210805 Supplementary Training 03
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "toc.integrate"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "search": "../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.960e086b.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

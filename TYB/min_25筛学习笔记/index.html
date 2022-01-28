@@ -1,0 +1,1573 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="PoorMath">
+      
+      
+        <link rel="canonical" href="https://poormath.github.io/wiki/TYB/min_25%E7%AD%9B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+      
+      <link rel="icon" href="https://cdn.jsdelivr.net/npm/oicdn@0.0.1/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.8">
+    
+    
+      
+        <title>min_25筛学习笔记 - Poor_Math-Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6e60f8b8.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ffffff">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,400i,700%7CFira+Mono&display=fallback">
+        <style>:root{--md-text-font:"Fira Sans";--md-code-font:"Fira Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="pink">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Poor_Math-Wiki" class="md-header__button md-logo" aria-label="Poor_Math-Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Poor_Math-Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              min_25筛学习笔记
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/PoorMath/wiki" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wiki
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      首页
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../contest/bad_sample/" class="md-tabs__link">
+        比赛记录
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../YZW/characteristic-polynomial/" class="md-tabs__link">
+        YZW
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../JLK/HDU%206960/" class="md-tabs__link">
+        JLK
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../prufer%E5%BA%8F%E5%88%97%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="md-tabs__link md-tabs__link--active">
+        TYB
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../others/QWQ/" class="md-tabs__link">
+        杂项
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Poor_Math-Wiki" class="md-nav__button md-logo" aria-label="Poor_Math-Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+
+    </a>
+    Poor_Math-Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/PoorMath/wiki" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        首页
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          比赛记录
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="比赛记录" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          比赛记录
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/bad_sample/" class="md-nav__link">
+        注意事项
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20220125%202021ICPC%E6%B2%88%E9%98%B3/" class="md-nav__link">
+        20220125 2021ICPC沈阳
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20220120%20NWERC2019/" class="md-nav__link">
+        20220120 NWERC2019
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20220118%202018%20ICPC%20Asia%20Jakarta%20Regional%20Contest/" class="md-nav__link">
+        20220118 2018 ICPC Asia Jakarta Regional Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20211211%20ByteCamp%E7%BD%91%E7%BB%9C%E9%A2%84%E9%80%89%E8%B5%9B/" class="md-nav__link">
+        20211211 ByteCamp网络预选赛
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20211204%202021ICPC%E5%8D%97%E4%BA%AC/" class="md-nav__link">
+        20211204 2021ICPC南京
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20211128%202020ICPC%E5%8D%97%E4%BA%AC/" class="md-nav__link">
+        20211128 2020ICPC南京
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20211121%202021CCPC%E5%A8%81%E6%B5%B7/" class="md-nav__link">
+        20211121 2021CCPC威海
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20211031%202020-2021%20NERC/" class="md-nav__link">
+        20211031 2020-2021 NERC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20211017%202017-2018%20NEERC%20Northern%20Subregional%20Contest/" class="md-nav__link">
+        20211017 2017-2018 NEERC Northern Subregional Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20211007%202020ICPC%E6%BE%B3%E9%97%A8/" class="md-nav__link">
+        20211007 2020ICPC澳门
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20211005%202020ICPC%20ECFinal/" class="md-nav__link">
+        20211005 2020ICPC ECFinal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20211003%202013-2014%20Winter%20Petrozavodsk%20Camp%2C%20Andrew%20Stankevich%20Contest%2045/" class="md-nav__link">
+        20211003 2013-2014 Winter Petrozavodsk Camp, Andrew Stankevich Contest 45
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210912%202021%20BUAA%20Autumn%20Training%201/" class="md-nav__link">
+        20210912 2021 BUAA Autumn Training 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210830%20PtzCamp2021sD7%20MIPT%20Contest/" class="md-nav__link">
+        20210830 PtzCamp2021sD7 MIPT Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210829%20Replacement%20Contest%201%20Lviv%20NU%20Contest/" class="md-nav__link">
+        20210829 Replacement Contest 1 Lviv NU Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210828%202021CCPC%E7%BD%91%E7%BB%9C%E8%B5%9B/" class="md-nav__link">
+        20210828 2021CCPC网络赛
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210825%20PtzCamp2021sD3%20IQ%20test%20by%20kefaa2%2C%20antontrygubO_o%2C%20and%20gepardo/" class="md-nav__link">
+        20210825 PtzCamp2021sD3 IQ test by kefaa2, antontrygubO_o, and gepardo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210824%20PtzCamp2021sD2%20The%20American%20Contest/" class="md-nav__link">
+        20210824 PtzCamp2021sD2 The American Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210823%20PtzCamp2021sD1%20Kyoto%20U%20Contest/" class="md-nav__link">
+        20210823 PtzCamp2021sD1 Kyoto U Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210821%20Petrozavodsk%20Winter-2018.%20Carnegie%20Mellon%20U%20Contest/" class="md-nav__link">
+        20210821 Petrozavodsk Winter-2018. Carnegie Mellon U Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210818%20Petrozavodsk%20Winter-2019.%20Oleksandr%20Kulkov%20Contest%201/" class="md-nav__link">
+        20210818 Petrozavodsk Winter-2019. Oleksandr Kulkov Contest 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210816%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E5%8D%81%E5%9C%BA/" class="md-nav__link">
+        20210816 牛客多校第十场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210814%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E4%B9%9D%E5%9C%BA/" class="md-nav__link">
+        20210814 牛客多校第九场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210812%20Supplementary%20Training%2004/" class="md-nav__link">
+        20210812 Supplementary Training 04
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210810%20Petrozavodsk%20Summer-2013.%20Comenius%20U%20Selection%20by%20Michal%20Forisek/" class="md-nav__link">
+        20210810 Petrozavodsk Summer-2013. Comenius U Selection by Michal Forisek
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210809%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E5%85%AB%E5%9C%BA/" class="md-nav__link">
+        20210809 牛客多校第八场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210807%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E4%B8%83%E5%9C%BA/" class="md-nav__link">
+        20210807 牛客多校第七场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210805%20Supplementary%20Training%2003/" class="md-nav__link">
+        20210805 Supplementary Training 03
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210804%20NEERC2014/" class="md-nav__link">
+        20210804 NEERC2014
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210802%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E5%85%AD%E5%9C%BA/" class="md-nav__link">
+        20210802 牛客多校第六场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210731%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E4%BA%94%E5%9C%BA/" class="md-nav__link">
+        20210731 牛客多校第五场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210729%20Supplementary%20Training%2002/" class="md-nav__link">
+        20210729 Supplementary Training 02
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210726%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E5%9B%9B%E5%9C%BA/" class="md-nav__link">
+        20210726 牛客多校第四场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210724%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E4%B8%89%E5%9C%BA/" class="md-nav__link">
+        20210724 牛客多校第三场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210722%20Supplementary%20Training%2001/" class="md-nav__link">
+        20210722 Supplementary Training 01
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210719%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E4%BA%8C%E5%9C%BA/" class="md-nav__link">
+        20210719 牛客多校第二场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210718%202020ICPC%E6%B2%88%E9%98%B3/" class="md-nav__link">
+        20210718 2020ICPC沈阳
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210606%20BUAA%20Spring%20Training%208/" class="md-nav__link">
+        20210606 BUAA Spring Training 8
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210602%20Petrozavodsk%20Winter-2018.%20ITMO%20U%201%20Contest/" class="md-nav__link">
+        20210602 Petrozavodsk Winter-2018. ITMO U 1 Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contest/20210529%20SWERC2018/" class="md-nav__link">
+        20210529 SWERC2018
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          YZW
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="YZW" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          YZW
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../YZW/characteristic-polynomial/" class="md-nav__link">
+        特征多项式
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../YZW/linear-recurrence/" class="md-nav__link">
+        常系数线性齐次递推
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          JLK
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="JLK" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          JLK
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JLK/HDU%206960/" class="md-nav__link">
+        HDU 6960
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          TYB
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="TYB" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          TYB
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prufer%E5%BA%8F%E5%88%97%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+        prufer序列学习笔记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%AB%98%E6%95%88%E5%A4%84%E7%90%86%E6%97%A0%E4%BF%AE%E6%94%B9%E5%8C%BA%E9%97%B4%E8%AF%A2%E9%97%AE%E7%9A%84%E6%96%B9%E6%B3%95/" class="md-nav__link">
+        高效处理无修改区间询问的方法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          min_25筛学习笔记
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        min_25筛学习笔记
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    用途
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    怎么做
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    第一步
+  </a>
+  
+    <nav class="md-nav" aria-label="第一步">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    第一步具体实现
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    第二步
+  </a>
+  
+    <nav class="md-nav" aria-label="第二步">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    第二步具体实现
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updatelfloorfracnirfloor" class="md-nav__link">
+    update：补充递推的写法（算出在所有\(\lfloor\frac{n}{i}\rfloor\)处函数前缀和）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phi" class="md-nav__link">
+    具体实现（以筛\(\phi\)为例）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    小结
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8C%BA%E9%97%B4%E6%9C%AC%E8%B4%A8%E4%B8%8D%E5%90%8C%E5%AD%90%E4%B8%B2%E6%95%B0/" class="md-nav__link">
+        区间本质不同子串数
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CF1580F/" class="md-nav__link">
+        CF1580F
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          杂项
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="杂项" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          杂项
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/QWQ/" class="md-nav__link">
+        QWQ
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+  <h1>min_25筛学习笔记</h1>
+
+<h2 id="_1">用途<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>筛积性函数<span class="arithmatex">\(f(x)\)</span>的前缀和（某些不是积性函数，但可以按质因子拆贡献的<span class="arithmatex">\(f(x)\)</span>也可筛）。</p>
+<p>要求</p>
+<p>①<span class="arithmatex">\(f(p^k)\)</span>​​能够快速计算。</p>
+<p>②能够构造出一个完全积性函数<span class="arithmatex">\(h(x)\)</span>​​​，使<span class="arithmatex">\(f(p)=h(p)\)</span>​​​。</p>
+<p>③质因子对函数值的贡献能够快速计算。</p>
+<p>（若无特殊说明，<span class="arithmatex">\(p\)</span>​都代表质数）。</p>
+<h2 id="_2">怎么做<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>分两步：</p>
+<p>1、对所有<span class="arithmatex">\(x=\lfloor\frac{n}{i}\rfloor\)</span>筛出<span class="arithmatex">\(\le x\)</span>的所有质数的<span class="arithmatex">\(f\)</span>值之和。</p>
+<p>2、对所有<span class="arithmatex">\(x=\lfloor\frac{n}{i}\rfloor\)</span>求出<span class="arithmatex">\(\le x\)</span>的所有数的<span class="arithmatex">\(f\)</span>值之和。</p>
+<h2 id="_3">第一步<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>设<span class="arithmatex">\(prime_i\)</span>​​表示从小到大第<span class="arithmatex">\(i\)</span>​​​个质数（特别地，规定<span class="arithmatex">\(prime_0=1\)</span>），<span class="arithmatex">\(minp(i)\)</span>表示<span class="arithmatex">\(i\)</span>​​的最小质因子。</p>
+<p>在这一步我们需要用到性质②：构造一个完全积性函数<span class="arithmatex">\(h(x)\)</span>，使<span class="arithmatex">\(h(p)=f(p)\)</span>。具体原因后面会讲。</p>
+<p>设<span class="arithmatex">\(g(x,j)=\sum_{i=2}^x[i\in Prime\ or\ minp(i)&gt;prime_j]h(i)\)</span>​​​​。</p>
+<p>即统计质数和最小质因子大于<span class="arithmatex">\(prime_j\)</span>​​​​​​所有的数的<span class="arithmatex">\(h\)</span>​​​​​​​值之和（注意<span class="arithmatex">\(prime_0=1\)</span>，所以<span class="arithmatex">\(g\)</span>是不包括<span class="arithmatex">\(1\)</span>的）。感性理解一下就是在做一个埃氏筛法，第<span class="arithmatex">\(j\)</span>轮就用<span class="arithmatex">\(prime_j\)</span>筛去剩下的数中最小质因子为<span class="arithmatex">\(prime_j\)</span>的数，<span class="arithmatex">\(g(x,j)\)</span>就是<span class="arithmatex">\(1\)</span>到<span class="arithmatex">\(x\)</span>这些数在筛了<span class="arithmatex">\(j\)</span>轮后，剩下的数的<span class="arithmatex">\(h\)</span>​值之和。</p>
+<p>最后我们要求的是所有质数的<span class="arithmatex">\(f\)</span>​值，注意<span class="arithmatex">\(h(p)=f(p)\)</span>​，所以为<span class="arithmatex">\(g(x,tot)\)</span>​，<span class="arithmatex">\(tot\)</span>​为<span class="arithmatex">\([1,x]\)</span>​范围内质数个数（对每个<span class="arithmatex">\(x=\lfloor\frac{n}{i}\rfloor\)</span>​范围内的质数个数一般会在min_25筛的过程中顺便求出）。在这一步中，我们只是为了得到质数的<span class="arithmatex">\(f\)</span>​值之和，合数的<span class="arithmatex">\(f\)</span>​无关紧要，而且在最后会被筛掉，因此为了有快速的计算方法，即使<span class="arithmatex">\(f(\)</span>合数<span class="arithmatex">\()\neq h(\)</span>合数<span class="arithmatex">\()\)</span>，我们也用<span class="arithmatex">\(h\)</span>​计算。</p>
+<p>因为所有合数的最小质因子都<span class="arithmatex">\(\le\sqrt n\)</span>​，所以我们要先筛出<span class="arithmatex">\(\sqrt n\)</span>​范围内的质数。</p>
+<p>初始值<span class="arithmatex">\(g(x,0)=\sum_{i=2}^xh(i)\)</span>​。</p>
+<p>从小到大枚举<span class="arithmatex">\(j\)</span>，考虑如何转移。</p>
+<p>若<span class="arithmatex">\(prime_j^2&gt;x\)</span>，则我们在第<span class="arithmatex">\(j\)</span>轮不会筛掉任何额外的数，所以<span class="arithmatex">\(g(x,j)=g(x,j-1)\)</span>。</p>
+<p>若<span class="arithmatex">\(prime_j^2\le x\)</span>​​，最小质因子为<span class="arithmatex">\(prime_j\)</span>​的数会被筛掉，考虑减去<span class="arithmatex">\(h(prime_j)\times g(x/prime_j,j-1)\)</span>​，注意<span class="arithmatex">\(h\)</span>是完全积性函数，所以不需要除掉所有<span class="arithmatex">\(prime_j\)</span>这个质因子，但因为<span class="arithmatex">\(g\)</span>中还包含了所有质数，所以这样多减去了一些最小质因子小于<span class="arithmatex">\(prime_j\)</span>的值，所以还要加上这一部分。这一部分的方程为<span class="arithmatex">\(g(x,j)=g(x,j-1)-h(prime_j)\times g(x/prime_j,j-1)+h(prime_j)\sum_{i=1}^{j-1}h(prime_i)\)</span>​。</p>
+<h5 id="_4">第一步具体实现<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h5>
+<p>以求区间质数个数为例，直接上代码：</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">gid</span><span class="p">(</span><span class="n">LL</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">x</span><span class="o">&lt;=</span><span class="n">sn</span><span class="p">)</span><span class="k">return</span><span class="w"> </span><span class="n">id1</span><span class="p">[</span><span class="n">x</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">id2</span><span class="p">[</span><span class="n">n</span><span class="o">/</span><span class="n">x</span><span class="p">];</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">init</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">tot</span><span class="o">=</span><span class="n">lw</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">sn</span><span class="o">=</span><span class="p">(</span><span class="n">LL</span><span class="p">)</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">sn</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="n">mark</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">sn</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">mark</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="n">prime</span><span class="p">[</span><span class="o">++</span><span class="n">tot</span><span class="p">]</span><span class="o">=</span><span class="n">i</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">*</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">sn</span><span class="o">&amp;&amp;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">tot</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">mark</span><span class="p">[</span><span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">*</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">%</span><span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">LL</span><span class="w"> </span><span class="n">p</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">LL</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">=</span><span class="n">p</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">w</span><span class="p">[</span><span class="o">++</span><span class="n">lw</span><span class="p">]</span><span class="o">=</span><span class="n">n</span><span class="o">/</span><span class="n">i</span><span class="p">;</span><span class="n">p</span><span class="o">=</span><span class="n">n</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">/</span><span class="n">i</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">/</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">sn</span><span class="p">)</span><span class="n">id1</span><span class="p">[</span><span class="n">n</span><span class="o">/</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">lw</span><span class="p">;</span><span class="k">else</span><span class="w"> </span><span class="n">id2</span><span class="p">[</span><span class="n">n</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">/</span><span class="n">i</span><span class="p">)]</span><span class="o">=</span><span class="n">lw</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">g</span><span class="p">[</span><span class="n">lw</span><span class="p">]</span><span class="o">=</span><span class="n">w</span><span class="p">[</span><span class="n">lw</span><span class="p">]</span><span class="mi">-1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">tot</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">lw</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="p">((</span><span class="n">LL</span><span class="p">)</span><span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">*</span><span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">&gt;</span><span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">id</span><span class="o">=</span><span class="n">gid</span><span class="p">(</span><span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]);</span><span class="n">g</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">g</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">g</span><span class="p">[</span><span class="n">id</span><span class="p">]</span><span class="o">+</span><span class="n">j</span><span class="mi">-1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
+<p>几个要点：</p>
+<p>1、注意我们只需要求所有<span class="arithmatex">\(x=\lfloor\frac{n}{i}\rfloor\)</span>的<span class="arithmatex">\(g(x)\)</span>​的取值，只有根号级别个值（数组要开到<span class="arithmatex">\(2\sqrt n\)</span>），我们的<span class="arithmatex">\(x\)</span>不用具体的值而用一个编号代替。储存编号的时候用到一个常用的小技巧，大于和小于根号的分别放到两个数组存，这样空间是<span class="arithmatex">\(O(\sqrt n)\)</span>的。</p>
+<p>2、我们只需要用到<span class="arithmatex">\(g(x,tot)\)</span>，所以只用开一维数组，类似背包DP，每一轮从大到小转移即可。</p>
+<p>3、最后求<span class="arithmatex">\([1,x]\)</span>​内质数个数，就是<span class="arithmatex">\(g[gid(x)]\)</span>​。</p>
+<p>这一部分的复杂度是<span class="arithmatex">\(O(\frac{n^{\frac{3}{4}}}{\log n})\)</span>，注意如果筛的函数就是完全积性函数（如质数个数、质数和）那么只要这一步就足够了。</p>
+<h2 id="_5">第二步<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>设<span class="arithmatex">\(S(x,j)=\sum_{i=2}^x[minp(i)\ge prime_j]f(i)\)</span>。</p>
+<p>即所有最小质因子<span class="arithmatex">\(\ge prime_j\)</span>的数的<span class="arithmatex">\(f\)</span>值之和。</p>
+<p>考虑将这个拆成质数和合数两部分来算。</p>
+<p>质数的部分比较简单，即<span class="arithmatex">\(g(x,j)-\sum_{i=1}^{j-1}f(prime_i)\)</span>​。</p>
+<p>合数部分，考虑枚举最小质因子及其次数，可以得到<span class="arithmatex">\(\sum_{k=j}^{prime_k^2\le x}\sum_{e=1}^{prime_k^{e+1}\le x}[S(x/prime_k^e,j+1)\times f(prime_k^e)+f(prime_k^{e+1})]\)</span>​​，正确性显然。</p>
+<p>合起来就是<span class="arithmatex">\(S(x,j)=g(x,j)-\sum_{i=1}^{j-1}f(prime_i)+\sum_{k=j}^{prime_k^2\le x}\sum_{e=1}^{prime_k^{e+1}\le x}[S(x/prime_k^e,j+1)\times f(prime_k^e)+f(prime_k^{e+1})]\)</span>​。</p>
+<h5 id="_6">第二步具体实现<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h5>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">LL</span><span class="w"> </span><span class="nf">S</span><span class="p">(</span><span class="n">LL</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="kt">int</span><span class="w"> </span><span class="n">m</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">prime</span><span class="p">[</span><span class="n">m</span><span class="p">]</span><span class="o">&gt;</span><span class="n">n</span><span class="p">)</span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">LL</span><span class="w"> </span><span class="n">re</span><span class="p">;</span><span class="c1">//re初始值设为质数部分贡献</span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="o">=</span><span class="n">m</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">tot</span><span class="o">&amp;&amp;</span><span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">*</span><span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">LL</span><span class="w"> </span><span class="n">t</span><span class="o">=</span><span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">];</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">t</span><span class="o">*</span><span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">k</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="c1">//计算合数部分贡献</span>
+<span class="w">            </span><span class="n">t</span><span class="o">*=</span><span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">];</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">re</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
+<p>程序中的变量名和上面公式中的略有不同。</p>
+<p>为什么非积性函数也能筛呢？我们用到积性函数的性质其实是<span class="arithmatex">\(S(x/prime_k^e,j+1)\times f(prime_k^e)\)</span>这个地方，实际上，只要能快速由<span class="arithmatex">\(S(x/prime_k^e,j+1)\)</span>转移到<span class="arithmatex">\(S(x,j)\)</span>的函数就能筛，对着模板改一下就好了。</p>
+<p>注意我们始终没有考虑<span class="arithmatex">\(1\)</span>，所以<span class="arithmatex">\(\sum_{i=1}^nf(i)=S(n,1)+f(1)\)</span>。</p>
+<p>这一部分复杂度也是<span class="arithmatex">\(O(\frac{n^{\frac{3}{4}}}{\log n})\)</span>​。</p>
+<p>但如果计算出每个<span class="arithmatex">\(x=\lfloor\frac{n}{i}\rfloor\)</span>处的值，直接用递推写，复杂度貌似是<span class="arithmatex">\(O(n^{1-\epsilon})\)</span>​的，亚线性复杂度（这个不太了解，可能有误）。</p>
+<h5 id="updatelfloorfracnirfloor">update：补充递推的写法（算出在所有<span class="arithmatex">\(\lfloor\frac{n}{i}\rfloor\)</span>处函数前缀和）<a class="headerlink" href="#updatelfloorfracnirfloor" title="Permanent link">&para;</a></h5>
+<p>设<span class="arithmatex">\(S(x,j)=\sum_{i=2}^x[minp(i)\ge prime_j 或者 i\in Prime]f(i)\)</span>​（注意定义略有不同）。</p>
+<p>显然<span class="arithmatex">\(S(x,tot+1)\)</span>的值就是我们第一步筛出来的<span class="arithmatex">\(g(x)\)</span>（只包含了质数）。</p>
+<p>考虑<span class="arithmatex">\(S(x,j)\)</span>​比<span class="arithmatex">\(S(x,j+1)\)</span>​多了哪些数的贡献，类似地，我们将其分为两类，一类是至少有两个不同的质因子，且最小质因子为<span class="arithmatex">\(prime_j\)</span>​，一类是<span class="arithmatex">\(prime_j^k\)</span>​，其中<span class="arithmatex">\(k\ge2\)</span>​。所以式子为<span class="arithmatex">\(S(x,j)=S(x,j+1)+\sum_{e=1}^{prime_j^{e+1}\le x}\{[S(x/{prime_j^e},j+1)-\sum_{k=1}^{j-1}f(prime_k)]\times f(prime_j^e)+f(prime_j^{e+1})\}\)</span>。</p>
+<h5 id="phi">具体实现（以筛<span class="arithmatex">\(\phi\)</span>为例）<a class="headerlink" href="#phi" title="Permanent link">&para;</a></h5>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="o">=</span><span class="n">tot</span><span class="p">;</span><span class="n">j</span><span class="p">;</span><span class="n">j</span><span class="o">--</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">lw</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="p">((</span><span class="n">LL</span><span class="p">)</span><span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">*</span><span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">&gt;</span><span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">phi</span><span class="o">=</span><span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="mi">-1</span><span class="p">;</span><span class="n">LL</span><span class="w"> </span><span class="n">t</span><span class="o">=</span><span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">];</span><span class="w"></span>
+<span class="w">        </span><span class="k">while</span><span class="p">(</span><span class="n">t</span><span class="o">*</span><span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">&lt;=</span><span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">up</span><span class="p">(</span><span class="n">sphi</span><span class="p">[</span><span class="n">i</span><span class="p">],(</span><span class="n">LL</span><span class="p">)</span><span class="n">phi</span><span class="o">*</span><span class="p">(</span><span class="n">sphi</span><span class="p">[</span><span class="n">gid</span><span class="p">(</span><span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="n">t</span><span class="p">)]</span><span class="o">-</span><span class="n">sprime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">+</span><span class="n">j</span><span class="p">)</span><span class="o">%</span><span class="n">P</span><span class="p">);</span><span class="c1">//至少两个不同质因子合数</span>
+<span class="w">            </span><span class="n">phi</span><span class="o">=</span><span class="p">(</span><span class="n">LL</span><span class="p">)</span><span class="n">phi</span><span class="o">*</span><span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">%</span><span class="n">P</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="n">up</span><span class="p">(</span><span class="n">sphi</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">phi</span><span class="p">);</span><span class="c1">//质数的幂</span>
+<span class="w">            </span><span class="n">t</span><span class="o">*=</span><span class="p">(</span><span class="n">LL</span><span class="p">)</span><span class="n">prime</span><span class="p">[</span><span class="n">j</span><span class="p">];</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
+<h2 id="_7">小结<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>做了几个题后，感觉min_25筛是个很灵活的东西，很多跟质因数有关的题都可以用这个做。</p>
+<p><del>完结撒花</del></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="页脚">
+      
+        
+        <a href="../%E9%AB%98%E6%95%88%E5%A4%84%E7%90%86%E6%97%A0%E4%BF%AE%E6%94%B9%E5%8C%BA%E9%97%B4%E8%AF%A2%E9%97%AE%E7%9A%84%E6%96%B9%E6%B3%95/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 高效处理无修改区间询问的方法" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              高效处理无修改区间询问的方法
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../%E5%8C%BA%E9%97%B4%E6%9C%AC%E8%B4%A8%E4%B8%8D%E5%90%8C%E5%AD%90%E4%B8%B2%E6%95%B0/" class="md-footer__link md-footer__link--next" aria-label="下一页: 区间本质不同子串数" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              区间本质不同子串数
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "toc.integrate"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "search": "../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.960e086b.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

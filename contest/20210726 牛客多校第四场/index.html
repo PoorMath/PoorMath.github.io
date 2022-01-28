@@ -1,0 +1,1813 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="PoorMath">
+      
+      
+        <link rel="canonical" href="https://poormath.github.io/wiki/contest/20210726%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E5%9B%9B%E5%9C%BA/">
+      
+      <link rel="icon" href="https://cdn.jsdelivr.net/npm/oicdn@0.0.1/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.8">
+    
+    
+      
+        <title>20210726 牛客多校第四场 - Poor_Math-Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6e60f8b8.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ffffff">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,400i,700%7CFira+Mono&display=fallback">
+        <style>:root{--md-text-font:"Fira Sans";--md-code-font:"Fira Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="pink">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#20214" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Poor_Math-Wiki" class="md-header__button md-logo" aria-label="Poor_Math-Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Poor_Math-Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              20210726 牛客多校第四场
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/PoorMath/wiki" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wiki
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      首页
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../bad_sample/" class="md-tabs__link md-tabs__link--active">
+        比赛记录
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../YZW/characteristic-polynomial/" class="md-tabs__link">
+        YZW
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../JLK/HDU%206960/" class="md-tabs__link">
+        JLK
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../TYB/prufer%E5%BA%8F%E5%88%97%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="md-tabs__link">
+        TYB
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../others/QWQ/" class="md-tabs__link">
+        杂项
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Poor_Math-Wiki" class="md-nav__button md-logo" aria-label="Poor_Math-Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+
+    </a>
+    Poor_Math-Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/PoorMath/wiki" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        首页
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          比赛记录
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="比赛记录" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          比赛记录
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bad_sample/" class="md-nav__link">
+        注意事项
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20220125%202021ICPC%E6%B2%88%E9%98%B3/" class="md-nav__link">
+        20220125 2021ICPC沈阳
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20220120%20NWERC2019/" class="md-nav__link">
+        20220120 NWERC2019
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20220118%202018%20ICPC%20Asia%20Jakarta%20Regional%20Contest/" class="md-nav__link">
+        20220118 2018 ICPC Asia Jakarta Regional Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20211211%20ByteCamp%E7%BD%91%E7%BB%9C%E9%A2%84%E9%80%89%E8%B5%9B/" class="md-nav__link">
+        20211211 ByteCamp网络预选赛
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20211204%202021ICPC%E5%8D%97%E4%BA%AC/" class="md-nav__link">
+        20211204 2021ICPC南京
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20211128%202020ICPC%E5%8D%97%E4%BA%AC/" class="md-nav__link">
+        20211128 2020ICPC南京
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20211121%202021CCPC%E5%A8%81%E6%B5%B7/" class="md-nav__link">
+        20211121 2021CCPC威海
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20211031%202020-2021%20NERC/" class="md-nav__link">
+        20211031 2020-2021 NERC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20211017%202017-2018%20NEERC%20Northern%20Subregional%20Contest/" class="md-nav__link">
+        20211017 2017-2018 NEERC Northern Subregional Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20211007%202020ICPC%E6%BE%B3%E9%97%A8/" class="md-nav__link">
+        20211007 2020ICPC澳门
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20211005%202020ICPC%20ECFinal/" class="md-nav__link">
+        20211005 2020ICPC ECFinal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20211003%202013-2014%20Winter%20Petrozavodsk%20Camp%2C%20Andrew%20Stankevich%20Contest%2045/" class="md-nav__link">
+        20211003 2013-2014 Winter Petrozavodsk Camp, Andrew Stankevich Contest 45
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210912%202021%20BUAA%20Autumn%20Training%201/" class="md-nav__link">
+        20210912 2021 BUAA Autumn Training 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210830%20PtzCamp2021sD7%20MIPT%20Contest/" class="md-nav__link">
+        20210830 PtzCamp2021sD7 MIPT Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210829%20Replacement%20Contest%201%20Lviv%20NU%20Contest/" class="md-nav__link">
+        20210829 Replacement Contest 1 Lviv NU Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210828%202021CCPC%E7%BD%91%E7%BB%9C%E8%B5%9B/" class="md-nav__link">
+        20210828 2021CCPC网络赛
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210825%20PtzCamp2021sD3%20IQ%20test%20by%20kefaa2%2C%20antontrygubO_o%2C%20and%20gepardo/" class="md-nav__link">
+        20210825 PtzCamp2021sD3 IQ test by kefaa2, antontrygubO_o, and gepardo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210824%20PtzCamp2021sD2%20The%20American%20Contest/" class="md-nav__link">
+        20210824 PtzCamp2021sD2 The American Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210823%20PtzCamp2021sD1%20Kyoto%20U%20Contest/" class="md-nav__link">
+        20210823 PtzCamp2021sD1 Kyoto U Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210821%20Petrozavodsk%20Winter-2018.%20Carnegie%20Mellon%20U%20Contest/" class="md-nav__link">
+        20210821 Petrozavodsk Winter-2018. Carnegie Mellon U Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210818%20Petrozavodsk%20Winter-2019.%20Oleksandr%20Kulkov%20Contest%201/" class="md-nav__link">
+        20210818 Petrozavodsk Winter-2019. Oleksandr Kulkov Contest 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210816%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E5%8D%81%E5%9C%BA/" class="md-nav__link">
+        20210816 牛客多校第十场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210814%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E4%B9%9D%E5%9C%BA/" class="md-nav__link">
+        20210814 牛客多校第九场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210812%20Supplementary%20Training%2004/" class="md-nav__link">
+        20210812 Supplementary Training 04
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210810%20Petrozavodsk%20Summer-2013.%20Comenius%20U%20Selection%20by%20Michal%20Forisek/" class="md-nav__link">
+        20210810 Petrozavodsk Summer-2013. Comenius U Selection by Michal Forisek
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210809%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E5%85%AB%E5%9C%BA/" class="md-nav__link">
+        20210809 牛客多校第八场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210807%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E4%B8%83%E5%9C%BA/" class="md-nav__link">
+        20210807 牛客多校第七场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210805%20Supplementary%20Training%2003/" class="md-nav__link">
+        20210805 Supplementary Training 03
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210804%20NEERC2014/" class="md-nav__link">
+        20210804 NEERC2014
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210802%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E5%85%AD%E5%9C%BA/" class="md-nav__link">
+        20210802 牛客多校第六场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210731%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E4%BA%94%E5%9C%BA/" class="md-nav__link">
+        20210731 牛客多校第五场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210729%20Supplementary%20Training%2002/" class="md-nav__link">
+        20210729 Supplementary Training 02
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          20210726 牛客多校第四场
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        20210726 牛客多校第四场
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    A
+  </a>
+  
+    <nav class="md-nav" aria-label="A">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    B
+  </a>
+  
+    <nav class="md-nav" aria-label="B">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    C
+  </a>
+  
+    <nav class="md-nav" aria-label="C">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    D
+  </a>
+  
+    <nav class="md-nav" aria-label="D">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    E
+  </a>
+  
+    <nav class="md-nav" aria-label="E">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f" class="md-nav__link">
+    F
+  </a>
+  
+    <nav class="md-nav" aria-label="F">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g" class="md-nav__link">
+    G
+  </a>
+  
+    <nav class="md-nav" aria-label="G">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h" class="md-nav__link">
+    H
+  </a>
+  
+    <nav class="md-nav" aria-label="H">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i" class="md-nav__link">
+    I
+  </a>
+  
+    <nav class="md-nav" aria-label="I">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#j" class="md-nav__link">
+    J
+  </a>
+  
+    <nav class="md-nav" aria-label="J">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    题意
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    题解
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    记录
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    总结
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dirt" class="md-nav__link">
+    Dirt
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210724%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E4%B8%89%E5%9C%BA/" class="md-nav__link">
+        20210724 牛客多校第三场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210722%20Supplementary%20Training%2001/" class="md-nav__link">
+        20210722 Supplementary Training 01
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210719%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E4%BA%8C%E5%9C%BA/" class="md-nav__link">
+        20210719 牛客多校第二场
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210718%202020ICPC%E6%B2%88%E9%98%B3/" class="md-nav__link">
+        20210718 2020ICPC沈阳
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210606%20BUAA%20Spring%20Training%208/" class="md-nav__link">
+        20210606 BUAA Spring Training 8
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210602%20Petrozavodsk%20Winter-2018.%20ITMO%20U%201%20Contest/" class="md-nav__link">
+        20210602 Petrozavodsk Winter-2018. ITMO U 1 Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210529%20SWERC2018/" class="md-nav__link">
+        20210529 SWERC2018
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          YZW
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="YZW" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          YZW
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../YZW/characteristic-polynomial/" class="md-nav__link">
+        特征多项式
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../YZW/linear-recurrence/" class="md-nav__link">
+        常系数线性齐次递推
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          JLK
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="JLK" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          JLK
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JLK/HDU%206960/" class="md-nav__link">
+        HDU 6960
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          TYB
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="TYB" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          TYB
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TYB/prufer%E5%BA%8F%E5%88%97%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+        prufer序列学习笔记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TYB/%E9%AB%98%E6%95%88%E5%A4%84%E7%90%86%E6%97%A0%E4%BF%AE%E6%94%B9%E5%8C%BA%E9%97%B4%E8%AF%A2%E9%97%AE%E7%9A%84%E6%96%B9%E6%B3%95/" class="md-nav__link">
+        高效处理无修改区间询问的方法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TYB/min_25%E7%AD%9B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+        min_25筛学习笔记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TYB/%E5%8C%BA%E9%97%B4%E6%9C%AC%E8%B4%A8%E4%B8%8D%E5%90%8C%E5%AD%90%E4%B8%B2%E6%95%B0/" class="md-nav__link">
+        区间本质不同子串数
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TYB/CF1580F/" class="md-nav__link">
+        CF1580F
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          杂项
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="杂项" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          杂项
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/QWQ/" class="md-nav__link">
+        QWQ
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<h1 id="20214"><a href="https://ac.nowcoder.com/acm/contest/11255">2021牛客暑期多校训练营4</a><a class="headerlink" href="#20214" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th>排名</th>
+<th>当场过题数</th>
+<th>至今过题数</th>
+<th>总题数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>45/1292（校内4/22）</td>
+<td>7</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<h2 id="a"><strong>A</strong><a class="headerlink" href="#a" title="Permanent link">&para;</a></h2>
+<p><strong>upsolved by Suspicious String</strong></p>
+<h3 id="_1">题意<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>有 <span class="arithmatex">\(n\)</span> 个课程，每门课有学分 <span class="arithmatex">\(s_n\)</span>，且每门课都可以选无数次，<span class="arithmatex">\(q\)</span> 个询问，求选了恰好 <span class="arithmatex">\(w\)</span> 学分的方案数。
+题目还会给出一个培养方案：一个 <span class="arithmatex">\(n\)</span> 个点的有根树，每个限制是 <span class="arithmatex">\(x\)</span> 的子树里的课的学分总和至少为 <span class="arithmatex">\(c_x\)</span>。</p>
+<p><span class="arithmatex">\(1\leq n\leq 100\)</span>，<span class="arithmatex">\(1\leq s_n\leq 5\)</span>，<span class="arithmatex">\(1\leq c_n\leq 150\)</span>，<span class="arithmatex">\(1\leq q\leq 10\)</span>，<span class="arithmatex">\(1\leq w\leq 10^8\)</span>。</p>
+<h3 id="_2">题解<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>首先可以得到以下朴素解法：</p>
+<blockquote>
+<p>对于第 <span class="arithmatex">\(n\)</span> 门课程，不考虑其他限制，可获得的学分数为 <span class="arithmatex">\(0,s_n,2s_n,\cdots\)</span>。</p>
+<p>各学分方案数的生成函数为 <span class="arithmatex">\(A_n(x)=\sum_{i=0}^\infty x^{s_ni}\)</span>，其封闭形式为 <span class="arithmatex">\(1\over 1-x^{s_n}\)</span>。</p>
+<p>考虑培养方案的学分限制，对于第 <span class="arithmatex">\(n\)</span> 门课程，设 <span class="arithmatex">\(F_n\)</span> 为未考虑学分限制的生成函数，<span class="arithmatex">\(\bar F_n\)</span> 为考虑学分限制的生成函数，可以得到下式：</p>
+<p><span class="arithmatex">\(F_n(x)=A_n(x)\prod_{i\in\text{son}_n}\bar F_i(x)\)</span></p>
+<p>而 <span class="arithmatex">\(\bar F_n\)</span> 只需清除 <span class="arithmatex">\(F_n\)</span> 最低次的 <span class="arithmatex">\(c_n\)</span> 项：</p>
+<p><span class="arithmatex">\(\bar F_n(x)=F_n(x)-F_n(x)\bmod x^{c_n}\)</span></p>
+<p>遍历培养方案树即可计算得到根结点 <span class="arithmatex">\(\text{root}\)</span> 的生成函数。</p>
+<p>对于询问，给出学分数 <span class="arithmatex">\(w\)</span>，<span class="arithmatex">\([x^w]\bar F_\text{root}\)</span> 即为答案。</p>
+</blockquote>
+<p>由于 <span class="arithmatex">\(w\)</span> 可能取到 <span class="arithmatex">\(10^8\)</span>，我们并没有办法直接求出 <span class="arithmatex">\(\bar F_\text{root}\)</span> 的全部系数。</p>
+<p>一种做法是注意到 <span class="arithmatex">\(A_n(x)\)</span> 的形式，可以将所有 <span class="arithmatex">\(F_n(x)\)</span> 写为 <span class="arithmatex">\(P_n(x)\over Q_n(x)\)</span> 的形式，并且有：</p>
+<p><span class="arithmatex">\(\bar F_n(x)={\bar P_n(x)\over Q_n(x)}={P_n(x)-Q_n(x)(F_n(x)\bmod x^{c_n})\over Q_n(x)}\)</span></p>
+<p>但是对于每个结点计算 <span class="arithmatex">\(\bar F_n\)</span> 似乎比较繁琐，并且计算 <span class="arithmatex">\([x^w]{\bar P_\text{root}(x)\over Q_\text{root}(x)}\)</span> 也并不容易操作，至少我不太会。</p>
+<p><img alt="" src="https://poormath.github.io/poormath.jpg" /></p>
+<p>所以怎么办呢？一起来写一些显然易见的结论吧！</p>
+<blockquote>
+<p>设下标以 <span class="arithmatex">\(0\)</span> 开始的 <span class="arithmatex">\(k\)</span> 阶线性递推数列 <span class="arithmatex">\(\{a_n\}\)</span> 对于 <span class="arithmatex">\(i\geq k\)</span> 满足下式：<span class="arithmatex">\(a_i=\sum_{j=1}^k a_{i-j}c_j\)</span></p>
+<p>数列 <span class="arithmatex">\(\{a_n\}\)</span> 的生成函数 <span class="arithmatex">\(A(x)\)</span> 为：<span class="arithmatex">\(A(x)=\sum_{i=0}^\infty a_ix^i\)</span></p>
+<p>由递推关系可以得到：<span class="arithmatex">\(A(x)=A(x)C(x)+A(x)\bmod x^k\)</span></p>
+<p>其中 <span class="arithmatex">\(C(x)\)</span> 为递推系数 <span class="arithmatex">\(\{c_j\}\)</span> 的生成函数，即 <span class="arithmatex">\(C(x)=\sum_{j=1}^k c_jx^j\)</span></p>
+<p>设 <span class="arithmatex">\(R(x)=A(x)\bmod x^k\)</span>，解递推关系式可以得到：</p>
+<p><span class="arithmatex">\(A(x)={R(x)\over 1-C(x)}\)</span></p>
+<p>容易知道 <span class="arithmatex">\(R(x)\)</span> 成为数列 <span class="arithmatex">\(\{a_n\}\)</span> 的前 <span class="arithmatex">\(k\)</span> 项的生成函数当且仅当 <span class="arithmatex">\(\deg R&lt;\deg C=k\)</span>。</p>
+<blockquote>
+<p>若 <span class="arithmatex">\(\deg R\geq \deg C\)</span>，这意味着数列 <span class="arithmatex">\(\{a_n\}\)</span> 并不是从第 <span class="arithmatex">\(k+1\)</span> 项就满足递推式。</p>
+<p>但可以将 <span class="arithmatex">\(A(x)\)</span> 改写为 <span class="arithmatex">\(Q(x)+{R'(x)\over 1-C(x)}\)</span>，其中 <span class="arithmatex">\(R'(x)=R(x)\bmod (1-C(x))\)</span>，<span class="arithmatex">\(Q(x)={R(x)-R'(x)\over 1-C^2}\)</span>，这将 <span class="arithmatex">\(\{a_n\}\)</span> 写为一个从第 <span class="arithmatex">\(k+1\)</span> 项起满足递推式的数列 <span class="arithmatex">\(\{a'_n\}\)</span> 与一个 <span class="arithmatex">\(\deg R-\deg C+1\)</span> 项的数列 <span class="arithmatex">\(\{b_n\}\)</span>。</p>
+<p>容易知道 <span class="arithmatex">\(R'(x)\)</span> 成为数列 <span class="arithmatex">\({a_n}\)</span> 的前 <span class="arithmatex">\(k\)</span> 项的生成函数，<span class="arithmatex">\(Q(x)\)</span> 为 <span class="arithmatex">\(\{b_n\}\)</span> 的生成函数。</p>
+</blockquote>
+<p>注意到当 <span class="arithmatex">\(deg R&lt;deg C\)</span> 时，形如 <span class="arithmatex">\(R(x)\over 1-C(x)\)</span> 的多项式与线性递推数列一一对应。</p>
+<p>如果我们分别有 <span class="arithmatex">\(k_a\)</span> 阶与 <span class="arithmatex">\(k_b\)</span> 阶线性递推数列 <span class="arithmatex">\(\{a_n\},\{b_n\}\)</span>，令 <span class="arithmatex">\(d_n=\sum_{i=0}^{n-1}a_ib_{n-i}\)</span>，则 <span class="arithmatex">\(\{d_n\}\)</span> 也为线性递推数列。不妨设 <span class="arithmatex">\(A(x)={R_A(x)\over 1-C_A(x)},B(x)={R_B(x)\over 1-C_B(x)}\)</span>，显然 <span class="arithmatex">\(D(x)={R_AR_B\over 1-(C_A+C_B-C_AC_B)}\)</span>，这还说明 <span class="arithmatex">\(\{d_n\}\)</span> 为 <span class="arithmatex">\((k_a+k_b)\)</span> 阶线性递推数列。</p>
+<p>对于 <span class="arithmatex">\(k\)</span> 阶线性递推数列，我们只需要数列中连续的 <span class="arithmatex">\(k\)</span> 个值即可推出数列中后续所有值，<a href="https://poormath.github.io/YZW/linear-recurrence/">常系数线性齐次递推</a>的细节略去。</p>
+<p>因此将某个线性递推数列 <span class="arithmatex">\(\{a_n\}\)</span> 的前 <span class="arithmatex">\(t\)</span> 项删去，余下的 <span class="arithmatex">\(\{a'_n\}=\{a_{n+t}\}\)</span> 仍为线性递推数列，并且线性递推关系不变。</p>
+</blockquote>
+<p>由上述结论，易见对于所有课程，<span class="arithmatex">\(A_n(x), F_n(x), \bar F_n(x)\)</span> 均对应线性递推数列。</p>
+<p>更进一步地，设 <span class="arithmatex">\(\bar F_\text{root}(x)={\bar P_\text{root}(x)\over Q_\text{root}(x)}\)</span>，设 <span class="arithmatex">\(f_n=[x^n]\bar F_\text{root}(x)\)</span>，易见 <span class="arithmatex">\(Q_\text{root}(x)=\prod_{i=1}^n (1-x^{s_i})\)</span>，从而可知 <span class="arithmatex">\(Q_\text{root}(x)\)</span> 给出了 <span class="arithmatex">\(\{f_n\}\)</span> 的递推关系式，并且 <span class="arithmatex">\(\{f_n\}\)</span> 阶数为 <span class="arithmatex">\(\deg Q=\sum_{i=1}^ns_i\)</span>。因此只需知道 <span class="arithmatex">\(\bar F_\text{root}(x)\)</span> 的边界 <span class="arithmatex">\(\sum_{i=1}^ns_i\)</span> 项即可对于任意给定的 <span class="arithmatex">\(w\)</span> 求出 <span class="arithmatex">\(f_w\)</span>。</p>
+<p>遍历培养方案树，暴力维护多项式前 <span class="arithmatex">\(L=\max_{i=1}^n \{c_i\}+\sum_{i=1}^n s_i\)</span> 项未删去项，无论系数有无意义。多项式乘法不变，但在删去 <span class="arithmatex">\(k\)</span> 项时直接将维护的多项式除以 <span class="arithmatex">\(x\)</span> 的 <span class="arithmatex">\(k\)</span> 次幂，得到的多项式中新增了 <span class="arithmatex">\(k\)</span> 项无意义的高次项系数，也可以选择直接删去这 <span class="arithmatex">\(k\)</span> 项系数。</p>
+<blockquote>
+<p>我们将说明得到的 <span class="arithmatex">\(\bar F_\text{root}(x)\)</span> 的前 <span class="arithmatex">\(\sum_{i=1}^n s_i\)</span> 项未删去项均有意义。</p>
+<p>我们需要保证 <span class="arithmatex">\(F_n(x)\)</span> 次数小于 <span class="arithmatex">\(c_n\)</span> 的项系数为 <span class="arithmatex">\(0\)</span>。设 <span class="arithmatex">\(z(n)\)</span> 表示 <span class="arithmatex">\(\bar F_n(x)\)</span> 已被删去的项数，易见 <span class="arithmatex">\(z(n)=\max\left\{c_n,\sum_{i\in \text{son}_n}z(i)\right\}\)</span>。将 <span class="arithmatex">\(F_n\)</span> 处理为 <span class="arithmatex">\(\bar F_n\)</span> 时，我们会删去 <span class="arithmatex">\(z'(n)=z(n)-\sum_{i\in\text{son}_n}z(i)\)</span> 项。</p>
+<p>考察 <span class="arithmatex">\(\bar F_n(x)\)</span> 有意义的项数 <span class="arithmatex">\(y(n)\)</span>，易见 <span class="arithmatex">\(y(n)=\min_{i\in\text{son}_n}\{y(i),L\}-z'(n)\)</span>。</p>
+<p>我们想要证明 <span class="arithmatex">\(y(n)\geq L-\max_{i\in\text{subtree}_n}\{c_i\}\)</span>。</p>
+<p>采用归纳法，设上式对 <span class="arithmatex">\(n\)</span> 的所有子结点 <span class="arithmatex">\(i\)</span> 成立。</p>
+<p>由 <span class="arithmatex">\(y(n)\)</span> 的定义，有：<span class="arithmatex">\(y(n)\geq L-\max_{i\in\text{subtree}_n,i\neq n}\{c_i\}-z'(n)\)</span>。</p>
+<ul>
+<li>当 <span class="arithmatex">\(z'(n)=0\)</span> 时，即有上式成立。</li>
+<li>当 <span class="arithmatex">\(z'(n)\neq 0\)</span> 时，注意到有 <span class="arithmatex">\(z(k)\geq \max_{i\in\text{subtree}_k}\{c_i\}\)</span> 对任意 <span class="arithmatex">\(k\)</span> 成立，并且 <span class="arithmatex">\(z'(n)=c_n-\sum_{i\in\text{son}_n}z(i)\leq c_n-\sum_{k\in\text{son}_n} \max_{i \in\text{subtree}_k}\{c_i\}\leq c_n-\max_{i\in\text{subtree}_n,i\neq n} \{c_i\}\)</span> 成立，可知 <span class="arithmatex">\(c_n&gt;\sum_{i\in\text{son}_n}z(i)\geq\max_{i\in\text{subtree}_n,i\neq n} \{c_i\}\)</span>，因此 <span class="arithmatex">\(c_n=\max_{i\in\text{subtree}_n}\{c_i\}\)</span>。于是 <span class="arithmatex">\(y(n)\geq L-c_n=L-\max_{i\in\text{subtree}_n}\{c_i\}\)</span> 成立。</li>
+</ul>
+<p>因此对于根结点有 <span class="arithmatex">\(y(\text{root})\geq L-\max_{i=1}^n\{c_i\}=\sum_{i=1}^n s_i\)</span>。</p>
+<p>即得到的 <span class="arithmatex">\(\bar F_\text{root}(x)\)</span> 前 <span class="arithmatex">\(\sum_{i=1}^n s_i\)</span> 项未删去项均有意义。</p>
+</blockquote>
+<p>总时间复杂度 <span class="arithmatex">\(O(650^2(n+q\log w))\)</span>。</p>
+<p>所以为什么搞这么麻烦呢？因为不会多项式也不会 Berlekamp-Massey 算法啊！</p>
+<p><img alt="" src="https://poormath.github.io/poormath.jpg" /></p>
+<h2 id="b"><strong>B</strong><a class="headerlink" href="#b" title="Permanent link">&para;</a></h2>
+<p><strong>solved by YZW&amp;TYB</strong></p>
+<h3 id="_3">题意<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>随机生成一个数列，每次生成一个数，每个数都是<span class="arithmatex">\([1,n]\)</span>范围内的整数，每次有<span class="arithmatex">\(p_i\)</span>的概率生成<span class="arithmatex">\(i\)</span>，当这次的数小于上次的数时结束，设此时共有<span class="arithmatex">\(x\)</span>个数，求<span class="arithmatex">\(x^2\)</span>的期望。</p>
+<p><span class="arithmatex">\(n\le 100\)</span></p>
+<h3 id="_4">题解<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>根据期望DP的套路，我们选择倒推（不正推的具体原因大概是一些概率并不好算，比如在这题中，当前数列结尾为<span class="arithmatex">\(i\)</span>的概率并不好算）。由期望的线性性，<span class="arithmatex">\(E[(x+1)^2]=E[x^2+2x+1]=E[x^2]+2E[x]+1\)</span>，我们维护<span class="arithmatex">\(f_i\)</span>和<span class="arithmatex">\(g_i\)</span>，分别表示以<span class="arithmatex">\(i\)</span>开头，不包括最后一个数，长度平方的期望和长度的期望。则容易写出转移方程：</p>
+<div class="arithmatex">\[
+g_i=\sum_{j=i}^np_j(g_j+1)+\sum_{j=1}^{i-1}p_j
+\]</div>
+<div class="arithmatex">\[
+f_i=\sum_{j=i}^np_j(f_j+2g_j+1)+\sum_{j=1}^{i-1}p_j
+\]</div>
+<p>有自己转移到自己的情况，但是转移关系不会成环，所以不需要高斯消元，只需要移项除一下就好了，最后把最后一个数的贡献加上即可。</p>
+<p>时间复杂度<span class="arithmatex">\(O(n^2)\)</span>。</p>
+<h2 id="c"><strong>C</strong><a class="headerlink" href="#c" title="Permanent link">&para;</a></h2>
+<p><strong>solved by JLK&amp;TYB</strong></p>
+<h3 id="_5">题意<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>给出<span class="arithmatex">\(a,b,c,n\)</span>，构造三个长度为<span class="arithmatex">\(n\)</span>的字符串<span class="arithmatex">\(s_1,s_2,s_3\)</span>，满足<span class="arithmatex">\(lcs(s_1,s_2)=a,lcs(s_2,s_3)=b,lcs(s_1,s_3)=c\)</span>。<span class="arithmatex">\(lcs\)</span>表示最长公共子序列。</p>
+<p><span class="arithmatex">\(a,b,c,n\le 1000\)</span></p>
+<h3 id="_6">题解<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>不妨假设<span class="arithmatex">\(a\le b\le c\)</span>，那么可以：三个串的<span class="arithmatex">\([1,a]\)</span>填一种，第二和第三个串的<span class="arithmatex">\([a+1,b]\)</span>填一种，第三个串的<span class="arithmatex">\([b+1,b+c-a]\)</span>和第一个串的<span class="arithmatex">\([b+1,b+c-a]\)</span>填一种，剩下的位置填其它字符，使得<span class="arithmatex">\(lcs\)</span>不会再增加。</p>
+<h2 id="d"><strong>D</strong><a class="headerlink" href="#d" title="Permanent link">&para;</a></h2>
+<p><strong>upsolved by TYB</strong></p>
+<h3 id="_7">题意<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>给一棵<span class="arithmatex">\(n\)</span>个节点的树，删<span class="arithmatex">\(k\)</span>条边后再加<span class="arithmatex">\(k\)</span>条边使得它还是一棵树，求方案数。</p>
+<p><span class="arithmatex">\(n\le 5\times10^4,k\le\min(100,n-1)\)</span></p>
+<h3 id="_8">题解<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>考虑删掉<span class="arithmatex">\(k\)</span>条边后，重新把它们连成树的方案数为：<span class="arithmatex">\(n^{k-2}\Pi_{i=1}^{k+1}size_i\)</span>。推导过程见<a href="https://poormath.github.io/TYB/prufer序列学习笔记/">prufer序列学习笔记</a>。</p>
+<p>所以只需要考虑后面一坨怎么算。</p>
+<p>考虑其意义，相当于把原树分成<span class="arithmatex">\(k+1\)</span>个连通块后，从每个连通块选出一个点的方案数。树形DP，<span class="arithmatex">\(f_{i,j,0/1}\)</span>表示以<span class="arithmatex">\(i\)</span>为根的子树，分成<span class="arithmatex">\(j\)</span>个连通块，<span class="arithmatex">\(i\)</span>所在连通块是否选点的方案数。这是一个经典的树形背包问题，注意加上<span class="arithmatex">\(size\)</span>和<span class="arithmatex">\(k\)</span>的限制后其复杂度是<span class="arithmatex">\(O(nk)\)</span>而不是<span class="arithmatex">\(O(nk^2)\)</span>。</p>
+<h2 id="e"><strong>E</strong><a class="headerlink" href="#e" title="Permanent link">&para;</a></h2>
+<p><strong>solved by JLK</strong></p>
+<h3 id="_9">题意<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>有一棵<span class="arithmatex">\(n\)</span>个点的树，每个点有权值<span class="arithmatex">\(w_i\)</span>。现在只给出每个点的权值区间<span class="arithmatex">\([l_i,r_i]\)</span>，以及每条边两端的点权异或和，求有多少种赋值方案。</p>
+<p><span class="arithmatex">\(1 \le n \le 10^5,0 \le l_i \le r_i \lt 2^{30},0 \le w_u \oplus w_v \lt 2^{30}\)</span></p>
+<h3 id="_10">题解<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>首先可以固定1为根，然后得到每个点<span class="arithmatex">\(x\)</span>到根路径的异或和<span class="arithmatex">\(S_x\)</span>，就可以得到每个<span class="arithmatex">\(w_1\oplus S_x\)</span>的范围。由于是异或，可以按位考虑。先处理<span class="arithmatex">\(w_1 \oplus S_x \le R\)</span>的情况。从大到小考虑，如果有一位<span class="arithmatex">\(R\)</span>是0，那么<span class="arithmatex">\(w_1 \oplus S_x\)</span>也必须是0。否则，<span class="arithmatex">\(w_1\oplus S_x\)</span>这一位为0的情况全部都合法，为1的情况则需要看下一位。</p>
+<p>这样就把限制条件转化为最多30个不相交的区间。</p>
+<p>那么大于的情况可以看做是上面的区间挖掉<span class="arithmatex">\(w_1 \oplus S_x \le L-1\)</span>的区间。可以给前者一个1的权值，后者一个-1的权值来判断。因为后者一定是前者的子集。如果覆盖某个数权值和为<span class="arithmatex">\(n\)</span>，说明满足全部<span class="arithmatex">\(n\)</span>个限制条件，这个数就可以被记入答案。</p>
+<p>直接把所有区间拉出来排序然后记录就可以通过。不过考虑到每个区间实际上对应着Trie树上的一个点，只需要对Trie树动态开点，对每个区间打标记，最后遍历一次统计即可。具体就是能够往下走的时候就往下走，记入统计的点必须至少有一个儿子为空，否则不能保证一定合法（因为子树内可能有-1的权值）。</p>
+<p><span class="arithmatex">\(O(nlogw)\)</span></p>
+<h2 id="f"><strong>F</strong><a class="headerlink" href="#f" title="Permanent link">&para;</a></h2>
+<p><strong>solved by JLK</strong></p>
+<h3 id="_11">题意<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>给定一个<span class="arithmatex">\(n\)</span>个点<span class="arithmatex">\(m\)</span>条边的无向图，两人博弈，每次可以删掉一条边或者删掉一个没有环的连通块。不能操作者输。问谁赢。</p>
+<p><span class="arithmatex">\(1 \le n \le 100,0 \le m \le \min\{200,n(n-1)/2\}\)</span></p>
+<h3 id="_12">题解<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>删掉一条边，边数-1。</p>
+<p>删掉一棵树，点数-k，边数-(k-1)，每次操作使点数+边数的奇偶性变化。</p>
+<p>故只需判断n+m的奇偶性，奇数先手赢，偶数后手赢。</p>
+<h2 id="g"><strong>G</strong><a class="headerlink" href="#g" title="Permanent link">&para;</a></h2>
+<p><strong>solved by JLK&amp;TYB</strong></p>
+<h3 id="_13">题意<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>给定<span class="arithmatex">\(n,k,D\)</span>，求<span class="arithmatex">\(a_i\ge 0,\sum\limits_{i=1}^na_i=D\)</span>条件下<span class="arithmatex">\(\frac{D!}{\prod_{i=1}^n(a_i+k)!}\)</span>。</p>
+<p><span class="arithmatex">\(1 \le n \le 50,0 \le k \le 50,0 \le D \le 10^8\)</span></p>
+<h3 id="_14">题解<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(\frac{D!}{\prod_{i=1}^n(a_i+k)!}\)</span></p>
+<p><span class="arithmatex">\(=\frac{(D+nk)!}{\prod_{i=1}^n(a_i+k)!}\frac{D!}{(D+nk)!}\)</span></p>
+<p>注意到<span class="arithmatex">\(\sum_{b_i\ge0,\sum\limits_{i=1}^n b_i=P}\frac{P!}{\prod_{i=1}^nb_i!}=n^P\)</span>（可以考虑组合意义）</p>
+<p>那么令<span class="arithmatex">\(b_i=a_i+k,P=D+nk\)</span>，只需求出<span class="arithmatex">\(b_i\ge k\)</span>的方案即可。</p>
+<p>这可以用容斥解决。</p>
+<p>递推出<span class="arithmatex">\(d_{i,j}\)</span>表示有<span class="arithmatex">\(i\)</span>个数小于<span class="arithmatex">\(k\)</span>，且他们的和为<span class="arithmatex">\(j\)</span>的方案数（内部有排序）。</p>
+<p>那么答案就是<span class="arithmatex">\(\sum\limits_{i=0}^n (-1)^i\sum\limits_{j=0}^{i(k-1)}d_{i,j}C_n^iC_{D+nk}^j(n-i)^{D+nk-j}\)</span></p>
+<p><span class="arithmatex">\(D\)</span>很大，但是<span class="arithmatex">\(nk\)</span>很小，可以预处理出需要的数字。</p>
+<p><span class="arithmatex">\(O(n^2K)\)</span></p>
+<h2 id="h"><strong>H</strong><a class="headerlink" href="#h" title="Permanent link">&para;</a></h2>
+<p><strong>upsolved by JLK</strong></p>
+<h3 id="_15">题意<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p>定义运算<span class="arithmatex">\(\otimes <span class="arithmatex">\(，令\)</span>p_i\)</span>为第<span class="arithmatex">\(i\)</span>个质数，若<span class="arithmatex">\(x=\prod_i p_i^{a_i},y=\prod_i p_i^{a_i}\)</span>，则<span class="arithmatex">\(x \otimes y=\prod_i p_i^{|a_i-b_i|}\)</span>。</p>
+<p><span class="arithmatex">\(b_i=\sum_{1 \le j,k \le n,j \otimes k =i}a_jk^c\)</span>，求<span class="arithmatex">\(b\)</span>。</p>
+<p><span class="arithmatex">\(1 \le n \le 10^6,0 \le a_i \lt 998244353,0 \le c \le 10^9\)</span></p>
+<h3 id="_16">题解<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<p>不难发现<span class="arithmatex">\(x\otimes y=\frac{lcm(x,y)}{gcd(x,y)}=\frac{xy}{gcd(x,y)^2}\)</span></p>
+<p>提取出gcd，<span class="arithmatex">\(b_i=\sum\limits_{d=1}^i\sum\limits_{x=1}^{n/d}\sum\limits_{y=1}^{n/d}[gcd(x,y)=1,xy=i]a_{dx}(dy)^c\)</span></p>
+<p>注意到枚举<span class="arithmatex">\(x,y,xy\le n\)</span>的复杂度是<span class="arithmatex">\(O(nlogn)\)</span>的，可以对上式调换顺序。</p>
+<p><span class="arithmatex">\(b_i=\sum\limits_{x=1}^{i}\sum\limits_{y=1}^{i}[gcd(x,y)=1,xy=i]y^c\sum\limits_{d=1}^{\min\{\lfloor \frac nx\rfloor,\lfloor \frac ny\rfloor\}}a_{dx}d^c\)</span></p>
+<p>令<span class="arithmatex">\(f_{x,i}=\sum\limits_{d=1}^ia_{dx}d^c(i \le \lfloor \frac nx\rfloor)\)</span>，这个也可以<span class="arithmatex">\(O(nlogn)\)</span>求出。</p>
+<p>那么<span class="arithmatex">\(b_i=\sum\limits_{x=1}^{i}\sum\limits_{y=1}^{i}[gcd(x,y)=1,xy=i]y^c f_{x,\min\{\lfloor \frac nx\rfloor,\lfloor \frac ny\rfloor\}}\)</span></p>
+<p>只需枚举<span class="arithmatex">\(x,y\)</span>，计算每个<span class="arithmatex">\(b_i\)</span>即可。</p>
+<p><span class="arithmatex">\(O(nlogn)\)</span>（还要带上求gcd的复杂度？）</p>
+<h2 id="i"><strong>I</strong><a class="headerlink" href="#i" title="Permanent link">&para;</a></h2>
+<p><strong>solved by JLK&amp;TYB</strong></p>
+<h3 id="_17">题意<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p>给一个长度<span class="arithmatex">\(n\)</span>的排列，每个数可以不变或+1，求改变后的最小逆序对数。</p>
+<p><span class="arithmatex">\(1 \le n \le 2\times 10^5\)</span></p>
+<h3 id="_18">题解<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<p>逆序对减少的唯一情况是<span class="arithmatex">\(i\)</span>在<span class="arithmatex">\(i+1\)</span>之后，然后<span class="arithmatex">\(i\)</span>变成<span class="arithmatex">\(i+1\)</span>，<span class="arithmatex">\(i+1\)</span>不变。</p>
+<p>那么只需要从小到大考虑，碰到满足条件的就变，然后固定后一位继续往后找。</p>
+<p>如果从小到大枚举，当前能变却不变，一定是不优的。</p>
+<p>以及开始需要算好一次总逆序对。</p>
+<p><span class="arithmatex">\(O(nlogn)\)</span></p>
+<h2 id="j"><strong>J</strong><a class="headerlink" href="#j" title="Permanent link">&para;</a></h2>
+<p><strong>solved by YZW</strong></p>
+<h3 id="_19">题意<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<p>有数列 <span class="arithmatex">\(a_{1\dots n}\)</span>，<span class="arithmatex">\(b_{1\dots m}\)</span>，矩阵 <span class="arithmatex">\(W\)</span> 通过 <span class="arithmatex">\(a,b\)</span> 生成，具体地有 <span class="arithmatex">\(W_{i,j}=a_i+b_j\)</span>。</p>
+<p>求具有最大平均值的 <span class="arithmatex">\(W\)</span> 子矩阵，并且至少为 <span class="arithmatex">\(x\)</span> 行 <span class="arithmatex">\(y\)</span> 列。</p>
+<p><span class="arithmatex">\(1\leq n,m\leq 10^5\)</span>，<span class="arithmatex">\(1\leq x\leq n\)</span>，<span class="arithmatex">\(1\leq y\leq m\)</span>，<span class="arithmatex">\(0\leq a_i,b_i\leq 10^5\)</span>。</p>
+<h3 id="_20">题解<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<p>易见平均值为对应 <span class="arithmatex">\(a,b\)</span> 子序列的平均值之和。</p>
+<p>问题变为求序列中至少连续 <span class="arithmatex">\(x\)</span> 个元素的最大平均值。考虑二分平均值 <span class="arithmatex">\(v\)</span>，令 <span class="arithmatex">\(a'_i=a_i-v\)</span>，即要求 <span class="arithmatex">\(\sum_{i} a'_i\geq 0\)</span>，求前缀和，判断是否存在满足长度限制的差值为正即可。</p>
+<p><span class="arithmatex">\(O(n \log a_i+m\log b_i)\)</span></p>
+<h2 id="_21"><strong>记录</strong><a class="headerlink" href="#_21" title="Permanent link">&para;</a></h2>
+<p>开局分别看FIJ，出了一点问题，45min后都过了。</p>
+<p>然后TYB写C，WA一次后发现相同处理有问题，JLK改对了(1:18)。</p>
+<p>JLK先开B，但是发现推错了，于是TYB和YZW推式子，JLK写E。</p>
+<p>E WA+RE后AC(2:35)。</p>
+<p>然后YZW过B(2:43)。</p>
+<p>YZW写H，JLK和TYB看G，推了一会式子后G过了(3:34)。</p>
+<p>YZW说题读错了，然后一起卡DH至结束。</p>
+<h2 id="_22"><strong>总结</strong><a class="headerlink" href="#_22" title="Permanent link">&para;</a></h2>
+<p>JLK：数学题太多了，没有数理基础，需要补一补。这场罚时也有点多，比较简单的题还是需要谨慎一点。</p>
+<h2 id="dirt"><strong>Dirt</strong><a class="headerlink" href="#dirt" title="Permanent link">&para;</a></h2>
+<p>C(-1)</p>
+<p>E(-2)</p>
+<p>F(-1)</p>
+<p>G(-1)</p>
+<p>J(-1)</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="页脚">
+      
+        
+        <a href="../20210729%20Supplementary%20Training%2002/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 20210729 Supplementary Training 02" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              20210729 Supplementary Training 02
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../20210724%20%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1%E7%AC%AC%E4%B8%89%E5%9C%BA/" class="md-footer__link md-footer__link--next" aria-label="下一页: 20210724 牛客多校第三场" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              20210724 牛客多校第三场
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "toc.integrate"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "search": "../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.960e086b.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
